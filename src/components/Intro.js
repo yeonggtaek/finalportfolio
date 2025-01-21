@@ -8,7 +8,7 @@ export const Intro = () => {
         // Same substring at the start will only be typed out once, initially
         "I like to Design",
         1000, // wait 1s before replacing "Mice" with "Hamsters"
-        "I like to Development",
+        "I like to Develop",
         1000,
         "I like to Code",
         1000,

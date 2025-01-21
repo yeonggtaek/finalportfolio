@@ -12,15 +12,16 @@ export const Projects = () => {
   };
   return (
     <div className="w-full flex gap-[100px]">
-      <div className="p-16 bg-[#ffffff] rounded-xl">
+      <div>
         <ProjectImage
           alt="save the earth"
           src="/planet_saver.png"
           href="project/planet"
         />
         <p>SAVE THE EARTH</p>
+        <p>Planet Saver is Simple web </p>
       </div>
-      <div className="p-16 bg-[#ffffff] rounded-xl">
+      <div>
         <ProjectImage
           alt="remedify"
           src="/remedify.png"
