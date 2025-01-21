@@ -8,7 +8,7 @@ export const Navigation = () => {
       url: "/",
     },
     {
-      label: "Project",
+      label: "Projects",
       url: "/project",
     },
     {
