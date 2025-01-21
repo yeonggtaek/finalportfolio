@@ -23,7 +23,7 @@ export const Navigation = () => {
   return (
     <ul className="flex jutify-center items-center gap-6">
       {menus.map((menu) => (
-        <li key={menu.label} className="font-semibold text-[40px]">
+        <li key={menu.label} className="font-semibold text-[26px]">
           <Link href={menu.url}>{menu.label}</Link>
         </li>
       ))}

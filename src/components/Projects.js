@@ -26,8 +26,8 @@ export const Projects = () => {
           src="/remedify.png"
           href="project/remedify"
         />
-        <p>Remedify</p>
-        <p>Remedify is an AI-powered app </p>
+        <div>Remedify</div>
+        <div>Remedify is an AI-powered app </div>
       </div>
     </div>
   );

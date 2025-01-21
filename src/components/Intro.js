@@ -17,7 +17,7 @@ export const Intro = () => {
       ]}
       wrapper="span"
       speed={50}
-      style={{ fontSize: "2em", display: "inline-block" }}
+      style={{ fontSize: "2em", display: "inline-block", color: "#0F4C81", }}
       repeat={Infinity}
       className={`font-semibold text-[40px]`}
     />
