@@ -8,12 +8,12 @@ export const Navigation = () => {
       url: "/",
     },
     {
-      label: "Projects",
-      url: "/project",
-    },
-    {
       label: "About",
       url: "/about",
+    },
+    {
+      label: "Projects",
+      url: "/project",
     },
     {
       label: "Resume",

@@ -10,7 +10,7 @@ export default function Home() {
         <div className="text-[36px] font-semibold">
           Hello! I’m Yeongtaek
           <br />
-          I’m a Designer & Developer!
+          I’m a Web Designer & Developer!
         </div>
         <Intro />
         <div className="text-[36px] font-semibold">

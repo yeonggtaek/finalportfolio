@@ -16,12 +16,11 @@ export const Layout = ({ children }) => {
         >
           <Image
             aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/linkedin.png"
+            alt="linkedin"
+            width={30}
+            height={30}
           />
-          Learn
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -31,12 +30,11 @@ export const Layout = ({ children }) => {
         >
           <Image
             aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            src="/email.png"
+            alt="email"
+            width={30}
+            height={30}
           />
-          Examples
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -46,12 +44,11 @@ export const Layout = ({ children }) => {
         >
           <Image
             aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+            src="/github.png"
+            alt="github"
+            width={30}
+            height={30}
           />
-          Go to nextjs.org →
         </a>
       </footer>
     </div>
