@@ -20,8 +20,8 @@ export const Layout = ({ children }) => {
             aria-hidden
             src="/linkedin.png"
             alt="linkedin"
-            width={30}
-            height={30}
+            width={50}
+            height={50}
           />
         </a>
         <a
@@ -34,8 +34,8 @@ export const Layout = ({ children }) => {
             aria-hidden
             src="/email.png"
             alt="email"
-            width={30}
-            height={30}
+            width={50}
+            height={50}
           />
         </a>
         <a
@@ -48,8 +48,8 @@ export const Layout = ({ children }) => {
             aria-hidden
             src="/github.png"
             alt="github"
-            width={30}
-            height={30}
+            width={50}
+            height={50}
           />
         </a>
       </footer>
