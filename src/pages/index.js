@@ -8,17 +8,18 @@ export default function Home() {
   return (
     <Layout>
       <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-      <div className="flex flex-col sm:flex-row items-center gap-[20rem]">
+      <div className="flex flex-col sm:flex-row items-center gap-[25rem]">
         <div className="text-[30px] font-semibold">
           Hello! I’m Yeongtaek
           <br />
           I’m a Web Designer & Developer!
+          <br />
+          <Intro />
         </div>
         <div>
           <Animation />
           </div>
         </div>
-        <Intro />
         <div className="text-[46px] font-semibold">
         Projects
         </div>
