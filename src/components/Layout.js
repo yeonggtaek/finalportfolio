@@ -9,6 +9,7 @@ export const Layout = ({ children }) => {
       <main className={`pt-[110px] max-w-[1280px] flex-1 p-10`}>
         {children}
       </main>
+      <div className="text-[30px] font-semibold text-center">Contact me!</div>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
