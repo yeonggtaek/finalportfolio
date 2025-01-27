@@ -10,6 +10,12 @@ export const Layout = ({ children }) => {
         {children}
       </main>
       <div className="text-[30px] font-semibold text-center">Contact me!</div>
+      <Image
+        alt="icon"
+        src="/icon.png"
+        width={100}
+        height={100}
+      />
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"

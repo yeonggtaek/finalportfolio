@@ -13,7 +13,7 @@ export default function Home() {
           I’m a Web Designer & Developer!
         </div>
         <Intro />
-        <div className="text-[46px] font-semibold text-center items-center justify-center">
+        <div className="text-[46px] font-semibold">
         Projects
         </div>
         <Projects />
