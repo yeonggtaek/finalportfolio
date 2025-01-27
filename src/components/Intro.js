@@ -5,9 +5,8 @@ export const Intro = () => {
   return (
     <TypeAnimation
       sequence={[
-        // Same substring at the start will only be typed out once, initially
         "I like to Design",
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        1000, 
         "I like to Develop",
         1000,
         "I like to Code",

@@ -4,9 +4,11 @@ import { Header } from "./Header";
 
 export const Layout = ({ children }) => {
   return (
-    <div className="flex flex-col max-w-[1280px] m-auto min-h-screen">
+    <div className="flex flex-col items-center justify-center m-auto min-h-screen">
       <Header />
-      <main className={`pt-[110px] flex-1 p-10`}>{children}</main>
+      <main className={`pt-[110px] max-w-[1280px] flex-1 p-10`}>
+        {children}
+      </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"

@@ -1,35 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { ProjectImage } from "./ProjectImage";
+import { Project } from "./Project";
 
 export const Projects = () => {
-  const ProjectImage = ({ alt, src, href }) => {
-    return (
-      <Link href={href}>
-        <Image width="300" height="288" alt={alt} src={src} />
-      </Link>
-    );
-  };
   return (
     <div className="w-full flex gap-[100px]">
-      <div>
-        <ProjectImage
-          alt="save the earth"
-          src="/planet_saver.png"
-          href="project/planet"
-        />
-        <p>SAVE THE EARTH</p>
-        <p>Planet Saver is Simple web </p>
-      </div>
-      <div>
-        <ProjectImage
-          alt="remedify"
-          src="/remedify.png"
-          href="project/remedify"
-        />
-        <div>Remedify</div>
-        <div>Remedify is an AI-powered app </div>
-      </div>
+      <Project
+        alt="save the earth"
+        src="/planet-saver.png"
+        href="project/planet"
+        title="Planet Saver"
+        desc="Planet Saver is Simple web"
+      />
+      <Project
+        alt="remedify"
+        src="/remedify-1.png"
+        href="project/remedify"
+        title="Remedify"
+        desc="Remedify is an AI-powered app"
+      />
     </div>
   );
 };

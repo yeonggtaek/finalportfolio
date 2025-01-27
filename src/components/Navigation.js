@@ -12,10 +12,6 @@ export const Navigation = () => {
       url: "/about",
     },
     {
-      label: "Projects",
-      url: "/project",
-    },
-    {
       label: "Resume",
       url: "/resume",
     },
