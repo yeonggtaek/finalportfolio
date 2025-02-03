@@ -1,6 +1,7 @@
 import { Layout } from "@/components/Layout";
 import Image from "next/image";
 import React from "react";
+import Link from 'next/link';
 
 const Card = ({ title, content }) => {
   return (
@@ -33,8 +34,12 @@ const PlanetPage = () => {
           </div>
         </div>
         <div className="logos flex gap-12">
+        <Link href="https://github.com/yeonggtaek/planet-saver">
           <Image src="/github.png" width={80} height={80} alt="github" />
+        </Link>
+        <Link href="https://planet-saver.vercel.app/">
           <Image src="/vercel.png" width={80} height={80} alt="vercel" />
+          </Link>
         </div>
         <div className="overview flex flex-col gap-10">
           <div className="overview-title text-[64px] text-[#0A4E9F] font-bold">
@@ -90,17 +95,17 @@ const PlanetPage = () => {
             Quiz Section
           </div>
           <div className="flex flex-col">
-            <div className="flex">
-              <Image />
-              <Image />
+            <div className="flex gap-20 justify-center mt-10">
+            <Image src="/Quiz.png" width={500} height={900} alt="Quiz" />
+            <Image src="/Quiz1.png" width={500} height={900} alt="Quiz1" />
             </div>
-            <div className="flex">
-              <Image />
-              <Image />
+            <div className="flex gap-20 justify-center mt-12">
+            <Image src="/Quiz2.png" width={500} height={900} alt="Quiz2" />
+            <Image src="/Quiz3.png" width={500} height={900} alt="Quiz3" />
             </div>
-            <div className="flex">
-              <Image />
-              <Image />
+            <div className="flex gap-20 justify-center mt-12">
+            <Image src="/Quiz4.png" width={500} height={900} alt="Quiz4" />
+            <Image src="/Quiz5.png" width={500} height={900} alt="Quiz5" />
             </div>
           </div>
         </div>
