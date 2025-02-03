@@ -6,16 +6,9 @@ export const Layout = ({ children }) => {
   return (
     <div className="flex flex-col items-center justify-center m-auto min-h-screen">
       <Header />
-      <main className={`pt-[110px] max-w-[1280px] flex-1 p-10`}>
-        {children}
-      </main>
+      <main className={`pt-[110px] w-[1280px] flex-1 p-10`}>{children}</main>
       <div className="text-[30px] font-semibold text-center">Contact me!</div>
-      <Image
-        alt="icon"
-        src="/icon.png"
-        width={100}
-        height={100}
-      />
+      <Image alt="icon" src="/icon.png" width={100} height={100} />
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"

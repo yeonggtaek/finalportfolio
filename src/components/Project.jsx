@@ -1,19 +1,26 @@
 import React, { useState } from "react";
 import { ProjectImage } from "./ProjectImage";
+import classNames from "classnames";
 
 export const Project = ({ alt, src, href, title, desc }) => {
   const [hover, setHover] = useState(false);
-  console.log("hover:", hover);
+
   return (
     <div
-      className="border-2 border-[#ece0cb] hover:border-black rounded-[50px] pb-6 hover:shadow-2xl overflow-hidden"
-      style={{ boxShadow: "0px 4px 10px 0px #000;" }}
+      className={classNames(
+        "border-2 border-[#ece0cb]",
+        "rounded-[50px] pb-6 overflow-hidden",
+        "hover:border-black hover:shadow-2xl"
+      )}
+      // style={{ boxShadow: "0px 4px 10px 0px #000;" }}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
       <div
-        className="w-[500px] h-[500px] overflow-hidden rounded-[50px]"
-        style={{ borderRadius: hover ? 0 : "50px" }}
+        className={classNames(
+          "w-[500px] h-[500px] overflow-hidden",
+          hover ? "rounded-0" : "rounded-[50px]"
+        )}
       >
         <ProjectImage alt={alt} src={src} href={href} />
         {/* <div className="bg-white w-full h-full"></div> */}
