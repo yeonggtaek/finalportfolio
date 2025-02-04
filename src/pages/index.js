@@ -22,8 +22,10 @@ export default function Home() {
           <Animation />
           </div>
         </div>
+        <div className="flex justify-center w-full mt-[56px]">
         <div className="text-[46px] font-semibold">
         Projects
+        </div>
         </div>
         <Projects />
       </div>
