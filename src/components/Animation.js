@@ -1,68 +1,64 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export const Animation = () => {
-  const [targetPos, setTargetPos] = useState({ x: 0, y: 0 });
-  const [currentPos, setCurrentPos] = useState({ x: 0, y: 0 });
-  const containerRef = useRef(null);
+  const [rotationAxis, setRotationAxis] = useState({ x: 1, y: 1, z: 1 });
 
   useEffect(() => {
-    const handleMouseMove = (event) => {
-      const container = containerRef.current.getBoundingClientRect();
-
-      const mouseX = event.clientX - container.left;
-      const mouseY = event.clientY - container.top;
-
-      if (mouseX >= 0 && mouseX <= container.width && mouseY >= 0 && mouseY <= container.height) {
-        setTargetPos({ x: mouseX - 100, y: mouseY - 100 }); 
-      }
+    const randomAxis = {
+      x: Math.random() > 0.5 ? 1 : -1,
+      y: Math.random() > 0.5 ? 1 : -1,
+      z: Math.random() > 0.5 ? 1 : -1,
     };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
+    setRotationAxis(randomAxis);
   }, []);
-
-  useEffect(() => {
-    const lerp = (start, end, factor) => start + (end - start) * factor;
-
-    const animate = () => {
-      setCurrentPos((prevPos) => ({
-        x: lerp(prevPos.x, targetPos.x, 0.1),
-        y: lerp(prevPos.y, targetPos.y, 0.1),
-      }));
-      requestAnimationFrame(animate);
-    };
-
-    animate();
-  }, [targetPos]);
 
   return (
     <div
-      ref={containerRef}
       style={{
-        width: '300px',
-        height: '250px',
-        position: 'relative',
-        overflow: 'visible',
+        width: '200px',
+        height: '200px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        perspective: '1000px',
       }}
     >
-      <DotLottieReact
-        src="https://lottie.host/dbfd5756-4a09-418f-ad03-6e18529f261d/4h9WYANPPj.lottie"
-        background="transparent"
-        speed="1"
+      <div
         style={{
-          width: '200px',   
+          width: '200px',
           height: '200px',
-          position: 'absolute',
-          left: `${currentPos.x}px`,
-          top: `${currentPos.y}px`,
-          pointerEvents: 'none',
+          animation: `rotate3D 4s infinite linear`, 
+          transformOrigin: 'center',
         }}
-        loop
-        autoplay
-      />
+      >
+        <DotLottieReact
+          src="https://lottie.host/dbfd5756-4a09-418f-ad03-6e18529f261d/4h9WYANPPj.lottie"
+          background="transparent"
+          speed="1"
+          style={{
+            width: '100%',
+            height: '100%',
+          }}
+          loop
+          autoplay
+        />
+      </div>
+
+      <style>
+        {`
+          @keyframes rotate3D {
+            0% {
+              transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            }
+            100% {
+              transform: rotateX(${rotationAxis.x * 360}deg)
+                         rotateY(${rotationAxis.y * 360}deg)
+                         rotateZ(${rotationAxis.z * 360}deg);
+            }
+          }
+        `}
+      </style>
     </div>
   );
 };
