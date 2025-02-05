@@ -10,7 +10,7 @@ export const Layout = ({ children }) => {
       <div className="text-[30px] font-semibold text-center mt-8">Contact me!</div>
       <Image className="mt-4" alt="icon" src="/icon.png" width={100} height={100} />
       <div className="mt-5">
-      <footer className="row-start-3 flex gap-10 flex-wrap items-center justify-center">
+      <footer className="row-start-3 flex gap-10 flex-wrap items-center justify-center mb-10">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
