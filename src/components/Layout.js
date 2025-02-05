@@ -11,49 +11,53 @@ export const Layout = ({ children }) => {
       <Image className="mt-4" alt="icon" src="/icon.png" width={100} height={100} />
       <div className="mt-5">
       <footer className="row-start-3 flex gap-10 flex-wrap items-center justify-center mb-10">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/linkedin.png"
-            alt="linkedin"
-            width={50}
-            height={50}
-          />
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/email.png"
-            alt="email"
-            width={50}
-            height={50}
-          />
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/github.png"
-            alt="github"
-            width={50}
-            height={50}
-          />
-        </a>
-      </footer>
+  <a
+    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+    href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Image
+      aria-hidden
+      src="/linkedin.png"
+      alt="linkedin"
+      width={50}
+      height={50}
+      className="transition-transform duration-300 hover:-translate-y-3"
+    />
+  </a>
+  <a
+    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+    href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Image
+      aria-hidden
+      src="/email.png"
+      alt="email"
+      width={50}
+      height={50}
+      className="transition-transform duration-300 hover:-translate-y-3"
+    />
+  </a>
+  <a
+    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+    href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Image
+      aria-hidden
+      src="/github.png"
+      alt="github"
+      width={50}
+      height={50}
+      className="transition-transform duration-300 hover:-translate-y-3"
+    />
+  </a>
+</footer>
+
       </div>
     </div>
   );

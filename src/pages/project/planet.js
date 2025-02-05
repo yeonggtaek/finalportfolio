@@ -35,11 +35,24 @@ const PlanetPage = () => {
         </div>
         <div className="logos flex gap-12">
         <Link href="https://github.com/yeonggtaek/planet-saver">
-          <Image src="/github.png" width={80} height={80} alt="github" />
-        </Link>
-        <Link href="https://planet-saver.vercel.app/">
-          <Image src="/vercel.png" width={80} height={80} alt="vercel" />
-          </Link>
+        <Image 
+          src="/github.png" 
+          width={80} 
+          height={80} 
+          alt="github" 
+          className="transition-transform duration-300 hover:-translate-y-3" 
+        />
+      </Link>
+
+      <Link href="https://planet-saver.vercel.app/">
+        <Image 
+          src="/vercel.png" 
+          width={80} 
+          height={80} 
+          alt="vercel" 
+          className="transition-transform duration-300 hover:-translate-y-3" 
+        />
+      </Link>
         </div>
         <div className="overview flex flex-col gap-10">
           <div className="overview-title text-[64px] text-[#0A4E9F] font-bold">
@@ -56,7 +69,7 @@ const PlanetPage = () => {
         <Card
           title="Objectives"
           content={
-            <ul>
+            <ul className="list-disc">
               <li>
                 Educate Users: Simplify the science of global warming through
                 engaging content and quizzes.
@@ -75,7 +88,7 @@ const PlanetPage = () => {
         <Card
           title="Challenges"
           content={
-            <ol>
+            <ol className="list-[upper-roman]">
               <li>
                 Managing the entire design and development lifecycle alone.
               </li>
