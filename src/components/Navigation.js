@@ -13,8 +13,9 @@ export const Navigation = () => {
     },
     {
       label: "Resume",
-      url: "/resume",
-    },
+      url: "/Resume.pdf",
+      target: "_blank",
+    }    
   ];
   return (
     <ul className="flex jutify-center items-center gap-6">
