@@ -13,7 +13,7 @@ export const Projects = () => {
           src="/planet.png"
           href="project/planet"
           title="Planet Saver"
-          desc="Planet Saver is Simple web"
+          desc="Planet Saver is kid website"
         />
         <Project
           alt="remedify"

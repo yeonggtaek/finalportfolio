@@ -87,7 +87,7 @@ const PlanetPage = () => {
           </div>
           <div className="overview-content text-[32px] text-black">
             <span className="font-bold">Planet Saver </span>
-            is an educational web for children, designed to address global
+            is an educational website for children, designed to address global
             warming through interactive quizzes and easy-to-understand
             explanations. This tool aims to promote awareness of climate change
             while offering actionable solutions to mitigate its effects.
@@ -178,10 +178,10 @@ const PlanetPage = () => {
           title="Fonts"
           content={
             <div>
-              <div className="mt-3 mb-[34px] text-2xl font-medium">
+              <div className="mt-3 mb-[34px] text-2xl font-medium font-roboto">
                 BODY - Medium 24px
               </div>
-              <div className="text-xl font-medium leading-[50px]">
+              <div className="text-xl font-medium leading-[50px] font-roboto">
                 ABCDEFGHIJKLNMOPQRSTUVWXVZ
                 <br />
                 abcdefghijklnmopqrstuvwxyz
@@ -189,7 +189,7 @@ const PlanetPage = () => {
             </div>
           }
           sideContent={
-            <div className="pt-[10px] pr-[138px] text-2xl font-medium">
+            <div className="pt-[10px] pr-[138px] text-2xl font-medium font-roboto">
               Roboto
             </div>
           }

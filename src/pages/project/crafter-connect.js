@@ -230,29 +230,29 @@ const CraftersConnectPage = () => {
         <Card
           title="Typography"
           content={
-            <div className="flex flex-col gap-[50px] pt-8 pl-20">
+            <div className="flex flex-col gap-[50px] pt-8 pl-20 ">
               <div>
-                Below you can se our typography and font choices for the app. It
+                Below you can see our typography and font choices for the app. It
                 includes a preview of th font family, font size, line height and
                 colors.
               </div>
               <div>
-                <h1 className="text-[40px] text-[Orelega One]">Headline H1</h1>
-                <div>
+                <h1 className="text-[40px] font-orelega">Headline H1</h1>
+                <div className="font-orelega">
                   Font-family: Orelega One - Font-size: 40px - Font-weight:
                   Regular - Line-height: 36px
                 </div>
               </div>
               <div>
-                <h2 className="text-[32px] text-[Orelega One]">Headline H2</h2>
-                <div>
+                <h2 className="text-[32px] font-orelega">Headline H2</h2>
+                <div className="font-orelega">
                   Font-family: Orelega One - Font-size: 32px - Font-weight:
                   Regular - Line-height: 34.9px
                 </div>
               </div>
               <div>
-                <h3 className="text-[32px] text-[Orelega One]">Headline H3</h3>
-                <div>
+                <h3 className="text-[32px] font-orelega">Headline H3</h3>
+                <div className="font-orelega">
                   Font-family: Orelega One - Font-size: 24px - Font-weight:
                   Regular - Line-height: 36.2px
                 </div>

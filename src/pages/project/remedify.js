@@ -1,9 +1,24 @@
 import { Layout } from "@/components/Layout";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+const images = [
+  "/user_persona1.png",
+  "/user_persona2.png"
+];
+
+
 const RemedifyPage = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const handleNext = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
   return (
     <Layout>
     <div className="flex pt-20 flex-col gap-10 text-black">
@@ -68,6 +83,25 @@ const RemedifyPage = () => {
           <span className="font-bold"><br/>Caregiver Support:</span> Shared tracking & smart notifications enable caregivers to monitor adherence easily.
           </div>
         </div>
+        <div className="overview flex flex-col gap-10">
+          <div className="overview-title text-[64px] text-[#007972] font-bold">
+          Who Remedify is For
+          </div>
+          <div className="overview-title text-[64px] text-[#007972] font-bold">
+          User persona
+          </div>
+          <div className="overview-content text-[32px] text-black flex justify-center items-center gap-4">
+            <button onClick={handlePrev} className="text-[50px]">⬅</button>
+            <Image src={images[currentImageIndex]} width={500} height={300} alt="User Persona" />
+            <button onClick={handleNext} className="text-[50px]">➡</button>
+          </div>
+        </div>
+        <div className="overview-title text-[64px] text-[#007972] font-bold">
+          Sitemap
+          </div>
+          <div className="overview-content text-[32px] text-black flex justify-center items-center gap-4">
+            <Image src="/sitemap.png" width={780} height={530} alt="sitemap" />
+          </div>
       </div>
   </Layout>
 );
