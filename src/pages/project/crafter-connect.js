@@ -296,7 +296,6 @@ const CraftersConnectPage = () => {
   title="hi-fi"
 ></iframe>
 </div>
-
       </div>
     </Layout>
   );
