@@ -44,6 +44,30 @@ const RemedifyPage = () => {
           Medication adherence is a significant challenge, particularly for individuals with chronic conditions and cognitive impairments. Studies show that only 50% of prescribed medications are taken as directed, often due to misunderstanding and forgetfulness. To address this, <span className="font-bold">Remedify</span> was developed—an AI-powered medication reminder app that simplifies the process of tracking, understanding, and managing prescriptions.
           </div>
         </div>
+        <div className="overview flex flex-col gap-10">
+          <div className="overview-title text-[64px] text-[#007972] font-bold">
+          Challenge
+          </div>
+          <div className="overview-content text-[32px] text-black">
+          <span className="font-bold">Medication Adherence & Engagement:</span> Patients struggle with forgetfulness and misunderstanding, leading to poor adherence and low app engagement.
+          <span className="font-bold"><br/>Complex Medical Data & AI Accuracy:</span> Medical information is hard to understand, and AI-generated insights must be accurate and trustworthy.
+          <span className="font-bold"><br/>Real-Time & Secure Data Handling:</span> The app requires real-time updates from reliable sources, with strong API security and data protection.
+          <span className="font-bold"><br/>Cross-Platform Performance:</span> Needs to run smoothly on iOS, Android, and Web while handling large-scale data efficiently.
+          <span className="font-bold"><br/>Caregiver & Patient Coordination:</span> Caregivers need shared tracking and secure communication to assist patients effectively.
+          </div>
+        </div>
+        <div className="overview flex flex-col gap-10">
+          <div className="overview-title text-[64px] text-[#007972] font-bold">
+          Solution
+          </div>
+          <div className="overview-content text-[32px] text-black">
+          <span className="font-bold">Smart Medication Tracking:</span> AI-powered reminders and scheduling help users stay on track and build habits.
+          <span className="font-bold"><br/>AI Medication Library:</span> Simplifies medical terms using AI and allows DIN scanning for easy entry.
+          <span className="font-bold"><br/>Secure & Real-Time Data:</span> Uses Health Canada’s database with Azure API, ensuring accuracy and encryption.
+          <span className="font-bold"><br/>Optimized Performance:</span> Built with React Native & Expo, featuring fast API calls and caching for smooth cross-platform use.
+          <span className="font-bold"><br/>Caregiver Support:</span> Shared tracking & smart notifications enable caregivers to monitor adherence easily.
+          </div>
+        </div>
       </div>
   </Layout>
 );
