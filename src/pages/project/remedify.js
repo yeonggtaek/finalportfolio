@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Slideshow from "@/components/Slideshow";
+import Blog from "@/components/Blog";
 
 const images = [
   "/user_persona1.png",
@@ -145,6 +146,19 @@ const RemedifyPage = () => {
           MoodBoard
           </div>
           <Slideshow/>
+          <div className="overview-title text-[64px] text-[#007972] font-bold justify-center flex">
+          Blog
+          </div>
+          <Blog/>
+          <div className="flex justify-center">
+          <Link href="https://www.remedify.ca/">
+          <button 
+          className="px-8 py-4 bg-[#00A39B] text-[#FAF8FE] font-bold rounded-lg shadow-md" 
+        >
+              Learn more
+            </button>
+          </Link>
+          </div>
       </div>
   </Layout>
 );
