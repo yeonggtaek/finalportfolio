@@ -33,7 +33,7 @@ const RemedifyPage = () => {
           <ul className="text-[40px] font-bold text-[#00A39B]">
             <li>Sep - Dec 2024</li>
             <li>ROLE: Developer</li>
-            <li>Skill: React Native, Expo, Node.js, Figma</li>
+            <li>tech stack: React Native, Expo, Node.js, Figma</li>
           </ul>
         </div>
         <div>

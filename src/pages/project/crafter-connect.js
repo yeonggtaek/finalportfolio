@@ -75,12 +75,12 @@ const CraftersConnectPage = () => {
         </div>
         <div className="logos flex gap-12">
           <Link href="https://craftersconnect.vercel.app/">
-            <Image
-              src="/vercel.png"
+          <Image
+              src="/vercel-text.svg"
               width={80}
               height={80}
               alt="vercel"
-              className="transition-transform duration-300 hover:-translate-y-3"
+              className="mt-8 transition-transform duration-300 hover:-translate-y-3"
             />
           </Link>
           <Link href="https://www.figma.com/proto/7NULAtnjrj1iwbcx0juovm/Crafter-Connect-IDSP?node-id=1-3088&t=H73n4CwWE8gxTK0F-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A3088">
@@ -146,6 +146,14 @@ const CraftersConnectPage = () => {
             </div>
           }
         />
+<div className="overview-title flex">
+  <div className="text-[64px] text-black font-bold">Styleguide</div>
+  <Link href="https://www.figma.com/design/7NULAtnjrj1iwbcx0juovm/Crafter-Connect-IDSP?node-id=48-771&t=LMg8Smg03qAhXs3t-1">
+    <button className="px-3 py-1 bg-#FCE6C4 text-black font-bold rounded-lg shadow-md">
+      View
+    </button>
+  </Link>
+</div>
         <Card
           className="h-[560px]"
           title="Logo and Branding"
@@ -271,6 +279,24 @@ const CraftersConnectPage = () => {
             </div>
           }
         />
+          <div className="overview-title text-[64px] text-black font-bold">
+            Lo-Fi/Hi-Fi
+          </div>
+<div className="flex gap-10">
+  <iframe
+    style={{ border: "1px solid rgba(0, 0, 0, 0.1)", width: "800px", height: "600px" }}
+    src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/7NULAtnjrj1iwbcx0juovm/Crafter-Connect-IDSP?node-id=182-2958&m=dev&t=LMg8Smg03qAhXs3t-1"
+    allowFullScreen
+    title="lo-fi"
+  ></iframe>  
+<iframe
+  style={{ border: "1px solid rgba(0, 0, 0, 0.1)", width: "800px", height: "600px" }}
+  src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/7NULAtnjrj1iwbcx0juovm/Crafter-Connect-IDSP?node-id=0-1&m=dev&t=LMg8Smg03qAhXs3t-1"
+  allowFullScreen
+  title="hi-fi"
+></iframe>
+</div>
+
       </div>
     </Layout>
   );

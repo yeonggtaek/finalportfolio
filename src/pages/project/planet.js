@@ -73,11 +73,11 @@ const PlanetPage = () => {
 
           <Link href="https://planet-saver.vercel.app/">
             <Image
-              src="/vercel.png"
+              src="/vercel-text.svg"
               width={80}
               height={80}
               alt="vercel"
-              className="transition-transform duration-300 hover:-translate-y-3"
+              className="mt-8 transition-transform duration-300 hover:-translate-y-3"
             />
           </Link>
         </div>
