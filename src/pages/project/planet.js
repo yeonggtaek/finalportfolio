@@ -19,10 +19,12 @@ const Card = ({ title, content, sideContent }) => {
 };
 
 const ColorPalette = ({ colorCode, title, description }) => {
-  const bg = `bg-[${colorCode}]`;
   return (
     <div className="flex-1 shadow-xl rounded-2xl bg-white overflow-hidden">
-      <div className={`${bg} p-[14px] pt-10 text-white text-md font-bold`}>
+      <div
+        className={`p-[14px] pt-10 text-white text-md font-bold`}
+        style={{ backgroundColor: colorCode }}
+      >
         <div>HEX</div>
         <div>{colorCode}</div>
       </div>
