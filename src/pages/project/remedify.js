@@ -2,12 +2,12 @@ import { Layout } from "@/components/Layout";
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Slideshow from "@/components/Slideshow";
 
 const images = [
   "/user_persona1.png",
-  "/user_persona2.png"
+  "/user_persona2.png",
 ];
-
 
 const RemedifyPage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -91,9 +91,9 @@ const RemedifyPage = () => {
           User persona
           </div>
           <div className="overview-content text-[32px] text-black flex justify-center items-center gap-4">
-            <button onClick={handlePrev} className="text-[50px]">⬅</button>
+            <button onClick={handlePrev} className="text-[50px] text-[#00A39B]">⬅</button>
             <Image src={images[currentImageIndex]} width={500} height={300} alt="User Persona" />
-            <button onClick={handleNext} className="text-[50px]">➡</button>
+            <button onClick={handleNext} className="text-[50px] text-[#00A39B]" >➡</button>
           </div>
         </div>
         <div className="overview-title text-[64px] text-[#007972] font-bold">
@@ -102,34 +102,49 @@ const RemedifyPage = () => {
           <div className="overview-content text-[32px] text-black flex justify-center items-center gap-4">
             <Image src="/sitemap.png" width={780} height={530} alt="sitemap" />
           </div>
+          <div className="flex gap-3">
           <div className="overview-title text-[64px] text-[#007972] font-bold">
           Lo-Fi/Hi-Fi
           </div>
+          <Link href="https://www.figma.com/design/lbLaPFGzOxiCvLbD18gxEl/Remedify-Wireframe?node-id=772-7321&t=cuEMAqubwRCsi26u-1">
+          <button 
+          className="px-3 py-1 bg-[#FCE6C4] text-[#00A39B] font-bold rounded-lg shadow-md" 
+        >
+              Darkmode
+            </button>
+          </Link>
+          </div>
           <div className="flex gap-10">
           <iframe
-  style={{
-    border: "1px solid rgba(0, 0, 0, 0.1)",
-    width: "800px",
-    height: "600px",
-    boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.3)"
-  }}
-  src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/lbLaPFGzOxiCvLbD18gxEl/Remedify-Wireframe?node-id=0-1&m=dev&t=cuEMAqubwRCsi26u-1"
-  allowFullScreen
-  title="lo-fi"
-></iframe>  
-<iframe
-  style={{
-    border: "1px solid rgba(0, 0, 0, 0.1)",
-    width: "800px",
-    height: "600px",
-    boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.3)" 
-  }}
-  src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/lbLaPFGzOxiCvLbD18gxEl/Remedify-Wireframe?node-id=1797-14184&m=dev&t=cuEMAqubwRCsi26u-1"
-  allowFullScreen
-  title="hi-fi"
-></iframe>
-
-</div>
+            style={{
+              border: "1px solid rgba(0, 0, 0, 0.1)",
+              width: "800px",
+              height: "600px",
+              boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.3)"
+            }}
+            src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/lbLaPFGzOxiCvLbD18gxEl/Remedify-Wireframe?node-id=0-1&m=dev&t=cuEMAqubwRCsi26u-1"
+            allowFullScreen
+            title="lo-fi"
+          ></iframe>  
+          <iframe
+            style={{
+              border: "1px solid rgba(0, 0, 0, 0.1)",
+              width: "800px",
+              height: "600px",
+              boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.3)" 
+            }}
+            src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/lbLaPFGzOxiCvLbD18gxEl/Remedify-Wireframe?node-id=1797-14184&m=dev&t=cuEMAqubwRCsi26u-1"
+            allowFullScreen
+            title="hi-fi"
+          ></iframe>
+          </div>
+          <div className="overview-title text-[64px] text-[#007972] font-bold">
+          STYLEGUIDE
+          </div>
+          <div className="overview-title text-[64px] text-[#007972] font-bold justify-center flex">
+          MoodBoard
+          </div>
+          <Slideshow/>
       </div>
   </Layout>
 );
