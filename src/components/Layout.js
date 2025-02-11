@@ -13,7 +13,7 @@ export const Layout = ({ children }) => {
       <footer className="row-start-3 flex gap-10 flex-wrap items-center justify-center mb-10">
   <a
     className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-    href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
+    href="https://www.linkedin.com/in/yeongtaek-lee/"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -28,7 +28,7 @@ export const Layout = ({ children }) => {
   </a>
   <a
     className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-    href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
+    href="mailto:dldudxor0707@gmail.com"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -43,7 +43,7 @@ export const Layout = ({ children }) => {
   </a>
   <a
     className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-    href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
+    href="https://github.com/yeonggtaek"
     target="_blank"
     rel="noopener noreferrer"
   >

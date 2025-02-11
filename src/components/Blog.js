@@ -17,7 +17,7 @@ export default function ImageSlider() {
         transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
       >
         {images.map((src, index) => (
-          <img key={index} src={src} alt={`Slide ${index}`} className="w-80 h-auto rounded-xl shadow-lg" />
+          <img key={index} src={src} alt={`Slide ${index}`} className="w-80 h-auto rounded-2xl shadow-lg" />
         ))}
       </motion.div>
     </div>
