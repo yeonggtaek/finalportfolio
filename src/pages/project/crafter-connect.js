@@ -61,7 +61,7 @@ const CraftersConnectPage = () => {
             </div>
             <ul className="text-[40px] font-bold text-black">
               <li>Jan - May 2024</li>
-              <li>ROLE: Developer, Designer</li>
+              <li>ROLE: Developer, Business</li>
             </ul>
           </div>
           <div>
