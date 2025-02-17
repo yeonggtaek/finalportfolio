@@ -72,7 +72,7 @@ export const About = () => {
     <section className="w-full mt-[130px]">
       <div className="mb-[120px]">
         <section id="about">
-        <AboutSubTitle title="About me!" />
+        <AboutSubTitle title="About Me!" />
         </section>
         <div className="flex">
           <div className="mr-[53px] text-[32px] font-semibold">
