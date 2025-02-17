@@ -52,6 +52,10 @@ body {
   animation: fall linear infinite, glow 3s ease-in-out infinite;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes fall {
   from {
     transform: translateY(0);

@@ -9,7 +9,11 @@ export const Navigation = () => {
     },
     {
       label: "About",
-      url: "/about",
+      url: "#about",
+    },
+    {
+      label: "Projects",
+      url: "#projects",
     },
     {
       label: "Resume",

@@ -4,29 +4,31 @@ import { Intro } from "@/components/Intro";
 import { Projects } from "@/components/Projects";
 import { Animation } from "@/components/Animation";
 import { Snowfall } from "@/components/Snowfall";
+import { About } from "@/components/About";
 
 export default function Home() {
   return (
     <Layout>
-      <Snowfall/>
+      <Snowfall />
       <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start relative z-10">
-      <div className="flex flex-col sm:flex-row items-center gap-[25rem]">
-        <div className="text-[30px] font-semibold">
-          Hello! I’m Yeongtaek
-          <br />
-          I’m a Web Designer & Developer!
-          <br />
-          <Intro />
-        </div>
-        <div>
-          <Animation />
+        <div className="flex flex-col sm:flex-row items-center gap-[25rem]">
+          <div className="text-[30px] font-semibold">
+            Hello! I’m Yeongtaek
+            <br />
+            I’m a Web Designer & Developer!
+            <br />
+            <Intro />
+          </div>
+          <div>
+            <Animation />
           </div>
         </div>
-        <div className="flex justify-center w-full mt-[56px]">
-        <div className="text-[46px] font-semibold">
-        Projects
+        <About />
+        <section id="projects" className="flex justify-center w-full mt-[150px]">
+        <div >
+          <div className="text-[46px] font-semibold">Projects</div>
         </div>
-        </div>
+        </section>
         <Projects />
       </div>
     </Layout>
