@@ -10,7 +10,7 @@ export const Projects = () => {
       <div className="w-full flex gap-[100px]">
         <Project
           alt="save the earth"
-          src="/planet.png"
+          src="/planet1.png"
           href="project/planet"
           title="Planet Saver"
           desc="Planet Saver is kid website"

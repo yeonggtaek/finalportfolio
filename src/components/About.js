@@ -94,7 +94,7 @@ export const About = () => {
               return (
                 <div
                   key={skill.title}
-                  className="flex flex-col justify-center items-center w-[150px] h-[150px] hover:w-[200px] hover:h-[200px] rounded-[50px]"
+                  className="flex flex-col justify-center items-center w-[150px] h-[150px] hover:w-[155px] hover:h-[155px] rounded-[50px]"
                   style={{
                     boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
                     backgroundColor: "rgba(164, 120, 100, 0.07)",
@@ -122,7 +122,7 @@ export const About = () => {
               return (
                 <div
                   key={skill.title}
-                  className="flex flex-col justify-center items-center w-[150px] h-[150px] hover:w-[200px] hover:h-[200px] rounded-[50px]"
+                  className="flex flex-col justify-center items-center w-[150px] h-[150px] hover:w-[155px] hover:h-[155px] rounded-[50px] "
                   style={{
                     boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
                     backgroundColor: "rgba(164, 120, 100, 0.07)",
