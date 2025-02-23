@@ -69,10 +69,10 @@ export const About = () => {
     },
   ];
   return (
-    <section className="w-full mt-[130px]">
+    <section className="w-full ">
       <div className="mb-[120px]">
-        <section id="about">
-        <AboutSubTitle title="About Me!" />
+        <section id="about" className="pt-[130px]">
+          <AboutSubTitle title="About Me!" />
         </section>
         <div className="flex">
           <div className="mr-[53px] text-[32px] font-semibold">
@@ -117,29 +117,29 @@ export const About = () => {
         <AboutSubTitle title="Design Skills" />
       </div>
       <div className="flex w-full p-4">
-          <div className="flex items-center justify-start gap-[70px] flex-wrap">
-            {designSkills.map((skill) => {
-              return (
-                <div
-                  key={skill.title}
-                  className="flex flex-col justify-center items-center w-[150px] h-[150px] hover:w-[155px] hover:h-[155px] rounded-[50px] "
-                  style={{
-                    boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
-                    backgroundColor: "rgba(164, 120, 100, 0.07)",
-                  }}
-                >
-                  <Image
-                    src={`/${skill.image}`}
-                    width={80}
-                    height={80}
-                    alt={skill.title}
-                  />
-                  <div className="text-[20px] font-bold">{skill.title}</div>
-                </div>
-              );
-            })}
-          </div>
+        <div className="flex items-center justify-start gap-[70px] flex-wrap">
+          {designSkills.map((skill) => {
+            return (
+              <div
+                key={skill.title}
+                className="flex flex-col justify-center items-center w-[150px] h-[150px] hover:w-[155px] hover:h-[155px] rounded-[50px] "
+                style={{
+                  boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+                  backgroundColor: "rgba(164, 120, 100, 0.07)",
+                }}
+              >
+                <Image
+                  src={`/${skill.image}`}
+                  width={80}
+                  height={80}
+                  alt={skill.title}
+                />
+                <div className="text-[20px] font-bold">{skill.title}</div>
+              </div>
+            );
+          })}
         </div>
+      </div>
     </section>
   );
 };

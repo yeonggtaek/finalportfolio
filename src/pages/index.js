@@ -24,11 +24,6 @@ export default function Home() {
           </div>
         </div>
         <About />
-        <section id="projects" className="flex justify-center w-full mt-[150px]">
-        <div >
-          <div className="text-[46px] font-semibold">Projects</div>
-        </div>
-        </section>
         <Projects />
       </div>
     </Layout>
