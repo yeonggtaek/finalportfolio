@@ -247,10 +247,10 @@ const RemedifyPage = () => {
           ></iframe>
         </div>
         <div>
-          <div className="overview-title text-[64px] text-[#007972] font-bold ">
+          <div className="overview-title text-[64px] text-[#007972] font-bold">
             STYLEGUIDE
           </div>
-          <div className="flex flex-col items-center gap-[100px] mt-[60px]">
+          <div className="flex flex-col items-center gap-[100px] mt-[80px]">
             <Colours />
             <Fonts />
             <Logo />
