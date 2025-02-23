@@ -57,3 +57,5 @@ export const Colours = () => {
     </div>
   );
 };
+
+export default Colours;

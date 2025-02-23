@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ColorPalette = ({ colorCode, variant, title, description }) => {
+const ColorPalette = ({ colorCode, variant, title, description }) => {
   return (
     <div className="flex-1 shadow-xl rounded-2xl bg-white overflow-hidden">
       <div
@@ -20,3 +20,5 @@ export const ColorPalette = ({ colorCode, variant, title, description }) => {
     </div>
   );
 };
+
+export default ColorPalette;
