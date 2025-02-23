@@ -24,6 +24,7 @@ export default function Home() {
           </div>
         </div>
         <About />
+
         <Projects />
       </div>
     </Layout>
