@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Slideshow from "@/components/Slideshow";
 import Blog from "@/components/Blog";
-import { Colours } from "./Colours";
-import { Fonts } from "./Fonts";
-import { Logo } from "./Logo";
+import { Colours } from "../../../components/Colours";
+import { Fonts } from "../../../components/Fonts";
+import { Logo } from "../../../components/Logo";
 const images = ["/user_persona1.png", "/user_persona2.png"];
 
 const RemedifyPage = () => {
@@ -150,7 +150,7 @@ const RemedifyPage = () => {
             <div className="flex gap-[140px]">
               <div className="flex flex-col gap-[36px]">
                 <Image
-                  src="/who1.png"
+                  src="/remedify-who-1.png"
                   width={248}
                   height={248}
                   alt="who1"
@@ -172,7 +172,7 @@ const RemedifyPage = () => {
               </div>
               <div className="flex flex-col gap-[36px]">
                 <Image
-                  src="/who2.png"
+                  src="/remedify-who-2.png"
                   width={248}
                   height={248}
                   alt="who1"
@@ -250,7 +250,7 @@ const RemedifyPage = () => {
           <div className="overview-title text-[64px] text-[#007972] font-bold">
             STYLEGUIDE
           </div>
-          <div className="flex flex-col items-center gap-[100px] mt-[80px]">
+          <div className="flex flex-col items-center gap-[100px]">
             <Colours />
             <Fonts />
             <Logo />

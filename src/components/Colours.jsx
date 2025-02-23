@@ -11,8 +11,29 @@ export const Colours = () => {
         "This color resembles a toned-down navy blue or a slightly muted royal blue.",
     },
     {
-      title: "Persian Green",
-      colorCode: "#00A39B",
+      title: "Vivid Orange",
+      colorCode: "#FF9825",
+      variant: "Primary",
+      description:
+        "This color resembles a toned-down navy blue or a slightly muted royal blue.",
+    },
+    {
+      title: "Vivid Orange",
+      colorCode: "#FF9825",
+      variant: "Primary",
+      description:
+        "This color resembles a toned-down navy blue or a slightly muted royal blue.",
+    },
+    {
+      title: "Vivid Orange",
+      colorCode: "#FF9825",
+      variant: "Primary",
+      description:
+        "This color resembles a toned-down navy blue or a slightly muted royal blue.",
+    },
+    {
+      title: "Vivid Orange",
+      colorCode: "#FF9825",
       variant: "Primary",
       description:
         "This color resembles a toned-down navy blue or a slightly muted royal blue.",
@@ -57,5 +78,3 @@ export const Colours = () => {
     </div>
   );
 };
-
-export default Colours;
