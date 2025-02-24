@@ -150,7 +150,7 @@ const RemedifyPage = () => {
             <div className="flex gap-[140px]">
               <div className="flex flex-col gap-[36px]">
                 <Image
-                  src="/remedify-who-1.png"
+                  src="/who1.png"
                   width={248}
                   height={248}
                   alt="who1"
@@ -172,7 +172,7 @@ const RemedifyPage = () => {
               </div>
               <div className="flex flex-col gap-[36px]">
                 <Image
-                  src="/remedify-who-2.png"
+                  src="/who2.png"
                   width={248}
                   height={248}
                   alt="who1"
