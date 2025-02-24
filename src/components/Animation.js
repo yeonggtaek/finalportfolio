@@ -13,21 +13,12 @@ export const Animation = () => {
   }, []);
 
   return (
-    <div
-      style={{
-        width: '200px',
-        height: '200px',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        perspective: '1000px',
-      }}
-    >
+    <div>
       <div
         style={{
-          width: '200px',
-          height: '200px',
-          animation: `rotate3D 4s infinite linear`, 
+          width: '300px',
+          height: '300px',
+          animation: `rotate3D 5s infinite linear`, 
           transformOrigin: 'center',
         }}
       >
@@ -36,7 +27,7 @@ export const Animation = () => {
           alt="Animated Logo"
           style={{
             width: '400px',
-            height: '400px',
+            height: '300px',
             objectFit: 'contain',
           }}
         />
