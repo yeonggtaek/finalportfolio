@@ -8,35 +8,35 @@ export const Colours = () => {
       colorCode: "#FF9825",
       variant: "Primary",
       description:
-        "This color resembles a toned-down navy blue or a slightly muted royal blue.",
+        "Bold and energetic, grabs attention for important alerts like medication reminders.",
     },
     {
-      title: "Vivid Orange",
-      colorCode: "#FF9825",
+      title: "Persian Green",
+      colorCode: "#00a39b",
       variant: "Primary",
       description:
-        "This color resembles a toned-down navy blue or a slightly muted royal blue.",
+        "A refreshing and balanced color that represents health and wellness.",
     },
     {
-      title: "Vivid Orange",
-      colorCode: "#FF9825",
-      variant: "Primary",
+      title: "Soft Orange",
+      colorCode: "#FDC26A",
+      variant: "Secondary",
       description:
-        "This color resembles a toned-down navy blue or a slightly muted royal blue.",
+        "Warm and approachable, used for gentle prompts and background elements.",
     },
     {
-      title: "Vivid Orange",
-      colorCode: "#FF9825",
-      variant: "Primary",
+      title: "Pale Aqua",
+      colorCode: "#BBD2DB",
+      variant: "Secondary",
       description:
-        "This color resembles a toned-down navy blue or a slightly muted royal blue.",
+        "Calm and soothing, evokes a sense of tranquility and reliability, helping users feel at ease.",
     },
     {
-      title: "Vivid Orange",
-      colorCode: "#FF9825",
-      variant: "Primary",
+      title: "Seashell",
+      colorCode: "#FBF1EA",
+      variant: "Tertiary",
       description:
-        "This color resembles a toned-down navy blue or a slightly muted royal blue.",
+        "A soft, neutral tone that adds warmth and clarity.",
     },
   ];
   return (
