@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export const Animation = () => {
   const [rotationAxis, setRotationAxis] = useState({ x: 1, y: 1, z: 1 });
@@ -32,16 +31,14 @@ export const Animation = () => {
           transformOrigin: 'center',
         }}
       >
-        <DotLottieReact
-          src="https://lottie.host/dbfd5756-4a09-418f-ad03-6e18529f261d/4h9WYANPPj.lottie"
-          background="transparent"
-          speed="1"
+        <img
+          src="/me-logo.png"
+          alt="Animated Logo"
           style={{
-            width: '100%',
-            height: '100%',
+            width: '400px',
+            height: '400px',
+            objectFit: 'contain',
           }}
-          loop
-          autoplay
         />
       </div>
 
