@@ -11,9 +11,9 @@ export const Projects = () => {
       className="flex flex-col items-center justify-center w-full pt-[90px]"
     >
       <div>
-        <div className="text-[46px] font-semibold">Projects</div>
+        <div className="text-[46px] font-semibold mb-[10]">Projects</div>
       </div>
-      <div className="flex flex-col gap-10 ">
+      <div className="flex flex-col gap-10">
         <div className="w-full flex gap-[100px] pt-[10px]">
           <Project
             alt="save the earth"
