@@ -8,7 +8,7 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col items-center justify-center w-full pt-[150px]"
+      className="flex flex-col items-center justify-center w-full pt-[80px]"
     >
       <div>
         <div className="text-[46px] font-semibold">Projects</div>
