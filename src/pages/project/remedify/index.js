@@ -7,6 +7,10 @@ import Blog from "@/components/Blog";
 import { Colours } from "../../../components/Colours";
 import { Fonts } from "../../../components/Fonts";
 import { Logo } from "../../../components/Logo";
+import { MedLib } from "../../../components/MedLib";
+import { Code } from "../../../components/Code";
+import { CodeChallenge } from "../../../components/CodeChallenge";
+import { FinalDesign } from "../../../components/Finaldesign";
 const images = ["/user_persona1.png", "/user_persona2.png"];
 
 const RemedifyPage = () => {
@@ -255,6 +259,71 @@ const RemedifyPage = () => {
           MoodBoard
         </div>
         <Slideshow />
+        <div className="pt-10 flex w-full">
+          <div className="flex flex-col">
+            <div className="text-[48px] font-bold text-[#007972] mb-10">
+              Feature Highlight
+            </div>
+            <div className="flex gap-[55px]">
+              <Image
+                src="/fh-1.png"
+                width={223}
+                height={484}
+                alt="feature highlihgt 1"
+              />
+              <Image
+                src="/fh-2.png"
+                width={223}
+                height={459}
+                alt="feature highlihgt 2"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col flex-1">
+            <div className="text-[48px] font-bold text-[#007972] text-right mb-10">
+              AI-Powered Label Scanning
+            </div>
+            <div className="flex gap-[30px] pt-10 pl-20">
+              <Image
+                src="/ai.png"
+                width={176}
+                height={320}
+                alt="AI-Powered Label Scanning"
+              />
+              <div className="text-[24px] font-semibold py-10 pr-10">
+                Easily scan your medication labels to set up reminders
+                automatically, minimizing the steps you need to remember and
+                simplifying the process.
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul className="text-[24px] font-semibold">
+          <li>Organized medication schedules.</li>
+          <li>Clear reminders to ensure adherence.</li>
+        </ul>
+        <MedLib />
+        <Code />
+        <CodeChallenge />
+        <div className="overview-title text-[64px] text-[#007972] font-bold justify-center flex">
+  Visual Story
+</div>
+<div className="flex justify-center">
+  <video width="800" controls>
+    <source src="/Remedify_Visual_Story_V9.mov" type="video/mp4" />
+  </video>
+</div>
+<div className="overview-title text-[64px] text-[#007972] font-bold justify-center flex mt-10">Business Cards</div>
+        <div className="flex justify-center mt-10 ">
+          <Image src="/BusinessCards.png" width={700} height={400} alt="BusinessCards" />
+        </div>
+        <div>
+        <div className="flex justify-center mt-10 gap-20 ">
+          <Image src="/BusinessCards2.png" width={500} height={20} alt="BusinessCards2" />
+          <Image src="/BusinessCards3.png" width={500} height={20} alt="BusinessCards3" />
+          </div>
+          </div>
+        <FinalDesign/>
         <div className="overview-title text-[64px] text-[#007972] font-bold justify-center flex">
           Blog
         </div>
