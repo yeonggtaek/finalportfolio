@@ -8,13 +8,13 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col items-center justify-center w-full pt-[80px]"
+      className="flex flex-col items-center justify-center w-full pt-[90px]"
     >
       <div>
         <div className="text-[46px] font-semibold">Projects</div>
       </div>
-      <div className="flex flex-col gap-10">
-        <div className="w-full flex gap-[100px]">
+      <div className="flex flex-col gap-10 ">
+        <div className="w-full flex gap-[100px] pt-[10px]">
           <Project
             alt="save the earth"
             src="/planet1.png"

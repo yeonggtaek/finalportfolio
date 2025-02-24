@@ -16,8 +16,6 @@ export const Animation = () => {
     <div>
       <div
         style={{
-          width: '300px',
-          height: '300px',
           animation: `rotate3D 5s infinite linear`, 
           transformOrigin: 'center',
         }}
@@ -27,7 +25,7 @@ export const Animation = () => {
           alt="Animated Logo"
           style={{
             width: '400px',
-            height: '300px',
+            height: '200px',
             objectFit: 'contain',
           }}
         />
