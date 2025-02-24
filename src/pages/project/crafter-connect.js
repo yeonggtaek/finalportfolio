@@ -148,13 +148,6 @@ const CraftersConnectPage = () => {
         />
         <div className="overview-title flex">
           <div className="text-[64px] text-black font-bold">Styleguide</div>
-          <Link href="https://www.figma.com/design/7NULAtnjrj1iwbcx0juovm/Crafter-Connect-IDSP?node-id=48-771&t=LMg8Smg03qAhXs3t-1">
-          <button 
-          className="px-3 py-1 bg-[#FCE6C4] text-black font-bold rounded-lg shadow-md" 
-        >
-              View
-            </button>
-          </Link>
         </div>
         <Card
           className="h-[560px]"
@@ -282,7 +275,7 @@ const CraftersConnectPage = () => {
           }
         />
           <div className="overview-title text-[64px] text-black font-bold">
-            Lo-Fi/Hi-Fi
+            Lo-Fi/Hi-Fi Wireframe
           </div>
 <div className="flex gap-10">
   <iframe

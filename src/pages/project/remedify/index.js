@@ -214,13 +214,8 @@ const RemedifyPage = () => {
         </div>
         <div className="flex gap-3">
           <div className="overview-title text-[64px] text-[#007972] font-bold">
-            Lo-Fi/Hi-Fi
+            Lo-Fi/Hi-Fi Wireframe
           </div>
-          <Link href="https://www.figma.com/design/lbLaPFGzOxiCvLbD18gxEl/Remedify-Wireframe?node-id=772-7321&t=cuEMAqubwRCsi26u-1">
-            <button className="px-3 py-1 bg-[#FCE6C4] text-[#00A39B] font-bold rounded-lg shadow-md">
-              Darkmode
-            </button>
-          </Link>
         </div>
         <div className="flex gap-10">
           <iframe
