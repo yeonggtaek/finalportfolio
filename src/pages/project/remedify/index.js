@@ -39,7 +39,7 @@ const RemedifyPage = () => {
             <ul className="text-[35px] font-bold text-[#00A39B]">
               <li>Sep - Dec 2024</li>
               <li>ROLE: Developer</li>
-              <li>Build with: React Native, OpenAI GPT-4o Mini, <br />Canadian Drug product Database API, Node.js, <br />UI Kitten</li>
+              <li>Tools: React Native, OpenAI GPT-4o Mini, <br />Canadian Drug product Database API, Node.js, <br />UI Kitten</li>
             </ul>
           </div>
           <ul>
