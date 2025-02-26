@@ -77,7 +77,7 @@ export const About = () => {
         <div className="flex">
           <div className="mr-[53px] text-[32px] font-semibold">
             Hello! I’m Yeongtaek. I’m a designer and developer!
-            <br /> I am specializing in Digital Design and Development.
+            <br /> I specialize in Digital Design and Development.
             <br /> I am passionate about UX/UI design and front-end
             <br /> development, with a strong focus on creating user-
             <br />

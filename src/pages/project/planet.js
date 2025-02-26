@@ -115,7 +115,7 @@ const PlanetPage = () => {
         <Card
           title="Challenges"
           content={
-            <ol className="list-[upper-roman] leading-[50px]">
+            <ol className="list-disc leading-[50px]">
               <li>
                 Managing the entire design and development lifecycle alone.
               </li>

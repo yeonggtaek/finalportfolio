@@ -36,12 +36,13 @@ const RemedifyPage = () => {
               height={70}
               alt="remedify"
             />
-            <ul className="text-[40px] font-bold text-[#00A39B]">
+            <ul className="text-[35px] font-bold text-[#00A39B]">
               <li>Sep - Dec 2024</li>
               <li>ROLE: Developer</li>
-              <li>Tech stack: React Native, Expo, Node.js, Figma</li>
+              <li>Build with: React Native, OpenAI GPT-4o Mini, <br />Canadian Drug product Database API, Node.js, <br />UI Kitten</li>
             </ul>
           </div>
+          <ul>
           <div>
             <Image
               src="/Medical_Prescription.png"
@@ -50,6 +51,7 @@ const RemedifyPage = () => {
               alt="earth"
             />
           </div>
+          </ul>
         </div>
         <div className="logos flex gap-12">
           <Link href="https://github.com/yeenathan/asclepius">
@@ -214,7 +216,13 @@ const RemedifyPage = () => {
           Sitemap
         </div>
         <div className="overview-content text-[32px] text-black flex justify-center items-center gap-4">
-          <Image src="/sitemap.png" width={780} height={530} alt="sitemap" />
+          <Image src="/sitemap.png" width={800} height={600} alt="sitemap" />
+        </div>
+        <div className="overview-title text-[64px] text-[#007972] font-bold">
+          User Flow Map
+        </div>
+        <div className="overview-content text-[32px] text-black flex justify-center items-center gap-4">
+          <Image src="/User Flow Map.png" width={1000} height={550} alt="User Flow Map" />
         </div>
         <div className="flex gap-3">
           <div className="overview-title text-[64px] text-[#007972] font-bold">
@@ -246,7 +254,7 @@ const RemedifyPage = () => {
           ></iframe>
         </div>
         <div>
-          <div className="overview-title text-[64px] text-[#007972] font-bold">
+          <div className="overview-title text-[64px] text-[#007972] mb-[40] font-bold">
             STYLEGUIDE
           </div>
           <div className="flex flex-col items-center gap-[100px]">
