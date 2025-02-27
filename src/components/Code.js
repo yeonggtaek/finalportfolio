@@ -17,6 +17,14 @@ export const Code = () => {
         />
         <div className="flex flex-col flex-1 text-[20px] gap-[10]">
           <div className="text-[32px] font-bold">How I Coded It</div>
+          <a
+  href="https://github.com/yeenathan/Asclepius/blob/main/app/pages/medLibrary.component.js"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-[15px] font-bold hover:text-blue-500"
+>
+  Link to file
+</a>
           <div className="text-[24px] font-bold">Core Components</div>
           <ul>
             <li>
