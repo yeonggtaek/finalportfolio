@@ -8,13 +8,14 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col items-center justify-center w-full pt-[90px] "
+      className="flex flex-col items-center justify-center w-full pt-[100px] max-xl:pt-[50px] "
     >
       <div>
         <div className="text-[46px] font-semibold ">Projects</div>
       </div>
       <div className="flex flex-col gap-10">
-        <div className="w-full flex gap-[100px] pt-[10px]">
+        <div>
+        <div className="w-full flex gap-[100px] pt-[10px] max-xl:pt-[30px] max-xl:gap-[100px]">
           <Project
             alt="save the earth"
             src="/planet1.png"
@@ -22,6 +23,8 @@ export const Projects = () => {
             title="Planet Saver"
             desc="Planet Saver is kid website"
           />
+          </div>
+          <div>
           <Project
             alt="remedify"
             src="/remedify-1.png"
@@ -38,6 +41,8 @@ export const Projects = () => {
             title="Crafter Connect"
             desc="Crafter Connect  is DIY project"
           />
+          </div>
+          <div>
           <Project
             alt="APT"
             src="/Poster.png"
@@ -45,8 +50,9 @@ export const Projects = () => {
             title="“APT” Song Poster"
             desc="“APT” is Photoshop design poster"
           />
+          </div>
+          </div>
         </div>
-      </div>
     </section>
   );
 };

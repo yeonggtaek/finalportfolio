@@ -24,12 +24,12 @@ const Card = ({ title, content, sideContent, className }) => {
 const PosterPage = () => {
   return (
     <Layout>
-      <div className="text-black text-[64px] font-bold">Poster Design</div>
-      <div className="overview flex flex-col gap-[32px] mt-[70px]">
-        <div className="overview-title text-[40px] text-black font-bold">
+      <div className="text-black text-[64px] font-bold max-xl:text-[35px] max-xl:mt-[60px]">Poster Design</div>
+      <div className="overview flex flex-col gap-[32px] mt-[70px] max-xl:mt-[40px]">
+        <div className="overview-title text-[40px] text-black font-bold max-xl:text-[25px]">
           Project Overview
         </div>
-        <div className="overview-content text-[32px] text-black">
+        <div className="overview-content text-[32px] text-black max-xl:text-base">
           <span className="font-bold">APT </span>
           is a collaborative music project featuring Rosé and Bruno Mars. This
           design aims to visually harmonize the distinct personalities of both
@@ -42,10 +42,10 @@ const PosterPage = () => {
         </div>
       </div>
       <div className="my-[110px]">
-        <div className="text-black text-[40px] font-bold">Postermockups</div>
-        <div className="mt-[110px] flex gap-[58px]">
+        <div className="text-black text-[40px] font-bold max-xl:text-[25px] ">Postermockups</div>
+        <div className="mt-[110px] flex gap-[58px] max-xl:mt-[40px] max-xl:flex-col">
           <div
-            className="rounded-2xl shadow-2xl overflow-hidden"
+            className="rounded-2xl shadow-2xl overflow-hidden "
             style={{
               boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
             }}

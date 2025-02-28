@@ -6,7 +6,7 @@ export const Intro = () => {
     <TypeAnimation
       sequence={[
         "I like to Design",
-        1000, 
+        1000,
         "I like to CSS",
         1000,
         "I like to Build",
@@ -14,9 +14,9 @@ export const Intro = () => {
       ]}
       wrapper="span"
       speed={50}
-      style={{ fontSize: "1.5em", display: "inline-block", color: "#0F4C81", }}
+      style={{ display: "inline-block", color: "#0F4C81" }}
       repeat={Infinity}
-      className={`font-semibold text-[30px]`}
+      className={`font-semibold text-[30px] max-xl:text-base`}
     />
   );
 };

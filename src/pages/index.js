@@ -10,16 +10,16 @@ export default function Home() {
   return (
     <Layout>
       <Snowfall />
-      <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start relative z-10">
-        <div className="flex flex-col sm:flex-row items-center gap-[25rem]">
-          <div className="text-[30px] font-semibold">
+      <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start relative z-10 max-xl:mt-14">
+        <div className="flex flex-row max-[1280px]:flex-col items-center max-xl:items-start gap-[25rem]">
+          <div className="text-[30px] max-xl:text-base font-semibold">
             Hello! I’m Yeongtaek
             <br />
             I’m a Web Designer & Developer!
             <br />
             <Intro />
           </div>
-          <div>
+          <div className="max-xl:hidden">
             <Animation />
           </div>
         </div>

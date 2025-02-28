@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import Image from "next/image";
+import React, { useEffect, useState } from "react";
 
 export const Animation = () => {
   const [rotationAxis, setRotationAxis] = useState({ x: 1, y: 1, z: 1 });
@@ -16,17 +17,17 @@ export const Animation = () => {
     <div>
       <div
         style={{
-          animation: `rotate3D 5s infinite linear`, 
-          transformOrigin: 'center',
+          animation: `rotate3D 5s infinite linear`,
+          transformOrigin: "center",
         }}
       >
-        <img
+        <Image
           src="/me-logo.png"
           alt="Animated Logo"
+          width={400}
+          height={200}
           style={{
-            width: '400px',
-            height: '200px',
-            objectFit: 'contain',
+            objectFit: "contain",
           }}
         />
       </div>
