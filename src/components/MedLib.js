@@ -7,7 +7,7 @@ export const MedLib = () => {
       <div className="overview-title text-[64px] text-[#007972] font-bold justify-center flex mt-10 mb-20">
         Medication Library
       </div>
-      <div className="flex gap-[130px]">
+      <div className="flex max-xl:flex-col gap-[130px]">
         <Image
           src="/medlib.png"
           width={500}

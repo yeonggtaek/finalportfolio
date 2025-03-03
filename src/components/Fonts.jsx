@@ -3,10 +3,10 @@ import React from "react";
 
 export const Fonts = () => {
   return (
-    <div className="flex flex-col gap-[50px] w-[999px] bg-[#F1F1E7] rounded-[50px] px-[60px] py-[84px]">
+    <div className="flex flex-col gap-[50px] w-[999px] max-xl:w-auto bg-[#F1F1E7] rounded-[50px] px-[60px] py-[84px]">
       <div className="text-[#00A39B] text-[64px] font-bold">Fonts</div>
       <div className="flex flex-col gap-[100px]">
-        <div className="flex gap-[40px]">
+        <div className="flex max-xl:flex-col gap-[40px]">
           <Image src="/font1.png" width={460} height={175} alt="font1" />
           <Image src="/font2.png" width={402} height={175} alt="font2" />
         </div>

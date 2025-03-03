@@ -2,6 +2,7 @@ import { Layout } from "@/components/Layout";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
+import { LinkButton } from "@/components/LinkButton";
 
 const Card = ({ title, content, sideContent }) => {
   return (
@@ -69,26 +70,28 @@ const PlanetPage = () => {
             />
           </div>
         </div>
-        <div className="logos flex gap-12 max-xl:gap-[25]">
-          <Link href="https://github.com/yeonggtaek/planet-saver">
+        <div className="logos flex items-center gap-12 max-xl:gap-[25]">
+          <div className="text-[40px] max-xl:text-[15px] font-bold text-[#0A4E9F]">
+            Link to:
+          </div>
+          <LinkButton href="https://github.com/yeonggtaek/planet-saver">
             <Image
               src="/github.png"
               width={80}
               height={80}
               alt="github"
-              className="transition-transform duration-300 hover:-translate-y-3 max-xl:w-[50px] max-xl:h-[50px]"
+              className=" max-xl:w-[40px] max-xl:h-[40px]"
             />
-          </Link>
-
-          <Link href="https://planet-saver.vercel.app/">
+          </LinkButton>
+          <LinkButton href="https://planet-saver.vercel.app/">
             <Image
               src="/vercel-text.svg"
               width={80}
               height={80}
               alt="vercel"
-              className="mt-8 transition-transform duration-300 hover:-translate-y-3 max-xl:w-[50px] max-xl:h-[50px] mt-[3]"
+              className="max-xl:w-[50px] max-xl:h-[50px] mt-[3]"
             />
-          </Link>
+          </LinkButton>
         </div>
         <div className="overview flex flex-col gap-10">
           <div className="overview-title text-[64px] text-[#0A4E9F] font-bold max-xl:text-[30px]">
@@ -145,16 +148,52 @@ const PlanetPage = () => {
           </div>
           <div className="flex flex-col">
             <div className="flex gap-20 justify-center mt-10">
-              <Image className="max-xl:h-[300]" src="/Quiz.png" width={500} height={900} alt="Quiz" />
-              <Image className="max-xl:h-[300]" src="/Quiz1.png" width={500} height={900} alt="Quiz1" />
+              <Image
+                className="max-xl:h-[300]"
+                src="/Quiz.png"
+                width={500}
+                height={900}
+                alt="Quiz"
+              />
+              <Image
+                className="max-xl:h-[300]"
+                src="/Quiz1.png"
+                width={500}
+                height={900}
+                alt="Quiz1"
+              />
             </div>
             <div className="flex gap-20 justify-center mt-12">
-              <Image className="max-xl:h-[300]" src="/Quiz2.png" width={500} height={900} alt="Quiz2" />
-              <Image className="max-xl:h-[300]" src="/Quiz3.png" width={500} height={900} alt="Quiz3" />
+              <Image
+                className="max-xl:h-[300]"
+                src="/Quiz2.png"
+                width={500}
+                height={900}
+                alt="Quiz2"
+              />
+              <Image
+                className="max-xl:h-[300]"
+                src="/Quiz3.png"
+                width={500}
+                height={900}
+                alt="Quiz3"
+              />
             </div>
             <div className="flex gap-20 justify-center mt-12">
-              <Image className="max-xl:h-[300]" src="/Quiz4.png" width={500} height={900} alt="Quiz4" />
-              <Image className="max-xl:h-[300]" src="/Quiz5.png" width={500} height={900} alt="Quiz5" />
+              <Image
+                className="max-xl:h-[300]"
+                src="/Quiz4.png"
+                width={500}
+                height={900}
+                alt="Quiz4"
+              />
+              <Image
+                className="max-xl:h-[300]"
+                src="/Quiz5.png"
+                width={500}
+                height={900}
+                alt="Quiz5"
+              />
             </div>
           </div>
         </div>

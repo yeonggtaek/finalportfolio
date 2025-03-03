@@ -35,15 +35,14 @@ export const Colours = () => {
       title: "Seashell",
       colorCode: "#FBF1EA",
       variant: "Tertiary",
-      description:
-        "A soft, neutral tone that adds warmth and clarity.",
+      description: "A soft, neutral tone that adds warmth and clarity.",
     },
   ];
   return (
-    <div className="flex flex-col gap-[50px] w-[999px] bg-[#F1F1E7] rounded-[50px] px-[60px] py-[84px]">
+    <div className="flex flex-col gap-[50px] w-[999px] max-xl:w-auto bg-[#F1F1E7] rounded-[50px] px-[60px] py-[84px] max-xl:p-5">
       <div className="text-[#00A39B] text-[64px] font-bold">Colours</div>
       <div className="flex flex-col gap-[100px]">
-        <div className="flex gap-5">
+        <div className="flex max-xl:flex-wrap gap-5">
           {colours.map((color) => (
             <ColorPalette
               colorCode={color.colorCode}

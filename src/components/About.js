@@ -73,7 +73,7 @@ export const About = () => {
   return (
     <section className="w-full ">
       <div className="mb-[120px] max-xl:mb-5">
-        <section id="about" className="pt-[130px]">
+        <section id="about" className="pt-[130px] max-xl:pt-5">
           <AboutSubTitle title="About Me!" />
         </section>
         <div className="flex">

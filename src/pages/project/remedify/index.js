@@ -11,6 +11,9 @@ import { MedLib } from "../../../components/MedLib";
 import { Code } from "../../../components/Code";
 import { CodeChallenge } from "../../../components/CodeChallenge";
 import { FinalDesign } from "../../../components/Finaldesign";
+import { GoToTop } from "@/components/GoToTop";
+import { LinkButton } from "@/components/LinkButton";
+
 const images = ["/user_persona1.png", "/user_persona2.png"];
 
 const RemedifyPage = () => {
@@ -27,6 +30,7 @@ const RemedifyPage = () => {
   };
   return (
     <Layout>
+      <GoToTop />
       <div className="flex pt-20 flex-col gap-10 text-black">
         <div className="flex justify-between title">
           <div className="flex flex-col gap-10">
@@ -35,40 +39,50 @@ const RemedifyPage = () => {
               width={430}
               height={70}
               alt="remedify"
+              className="max-xl:w-[120px]"
             />
-            <ul className="text-[35px] font-bold text-[#00A39B]">
+            <ul className="text-[35px] max-xl:text-base font-bold text-[#00A39B]">
               <li>Sep - Dec 2024</li>
               <li>ROLE: Developer</li>
-              <li>Tools: Expo/React Native, OpenAI GPT-4o Mini, <br />Canadian Drug product Database API, Node.js, <br />UI Kitten</li>
+              <li>
+                Tools: Expo/React Native, OpenAI GPT-4o Mini, <br />
+                Canadian Drug product Database API, Node.js, <br />
+                UI Kitten
+              </li>
             </ul>
           </div>
           <ul>
-          <div>
-            <Image
-              src="/Medical_Prescription.png"
-              width={300}
-              height={300}
-              alt="earth"
-            />
-          </div>
+            <div>
+              <Image
+                src="/Medical_Prescription.png"
+                width={300}
+                height={300}
+                alt="earth"
+                className="max-xl:w-[120px]"
+              />
+            </div>
           </ul>
         </div>
-        <div className="logos flex gap-12">
-          <Link href="https://github.com/yeenathan/asclepius">
+        <div className="logos flex items-center gap-12">
+          <div className="text-[40px] max-xl:text-[15px] font-bold text-[#00A39B]">
+            Link to:
+          </div>
+
+          <LinkButton href="https://github.com/yeenathan/asclepius">
             <Image
               src="/github.png"
               width={80}
               height={80}
               alt="github"
-              className="transition-transform duration-300 hover:-translate-y-3"
+              className="max-xl:w-[40px] max-xl:h-[40px]"
             />
-          </Link>
+          </LinkButton>
         </div>
         <div className="overview flex flex-col gap-10">
-          <div className="overview-title text-[64px] text-[#007972] font-bold">
+          <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold">
             Project Overview
           </div>
-          <div className="overview-content text-[32px] text-black">
+          <div className="overview-content text-[32px] max-xl:text-base text-black">
             Medication adherence is a significant challenge, particularly for
             individuals with chronic conditions and cognitive impairments.
             Studies show that only 50% of prescribed medications are taken as
@@ -79,10 +93,10 @@ const RemedifyPage = () => {
           </div>
         </div>
         <div className="overview flex flex-col gap-10">
-          <div className="overview-title text-[64px] text-[#007972] font-bold">
+          <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold">
             Challenge
           </div>
-          <div className="overview-content text-[32px] text-black">
+          <div className="overview-content text-[32px]  max-xl:text-base text-black">
             <span className="font-bold">
               Medication Adherence & Engagement:
             </span>{" "}
@@ -115,10 +129,10 @@ const RemedifyPage = () => {
           </div>
         </div>
         <div className="overview flex flex-col gap-10">
-          <div className="overview-title text-[64px] text-[#007972] font-bold">
+          <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold">
             Solution
           </div>
-          <div className="overview-content text-[32px] text-black">
+          <div className="overview-content text-[32px] max-xl:text-base text-black">
             <span className="font-bold">Smart Medication Tracking:</span>{" "}
             AI-powered reminders and scheduling help users stay on track and
             build habits.
@@ -150,17 +164,12 @@ const RemedifyPage = () => {
         </div>
         <div className="overview flex flex-col gap-10">
           <div className="flex flex-col items-center gap-[66px]">
-            <div className="overview-title text-[64px] text-[#007972] font-bold">
+            <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold">
               Who Remedify is For
             </div>
-            <div className="flex gap-[140px]">
+            <div className="flex max-xl:flex-col gap-[140px]">
               <div className="flex flex-col gap-[36px]">
-                <Image
-                  src="/who1.png"
-                  width={248}
-                  height={248}
-                  alt="who1"
-                />
+                <Image src="/who1.png" width={248} height={248} alt="who1" />
                 <div className="text-center text-[24px] text-[#00A39B] font-bold">
                   Polypharmacy
                 </div>
@@ -177,12 +186,7 @@ const RemedifyPage = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-[36px]">
-                <Image
-                  src="/who2.png"
-                  width={248}
-                  height={248}
-                  alt="who1"
-                />
+                <Image src="/who2.png" width={248} height={248} alt="who1" />
                 <div className="text-center text-[24px] text-[#00A39B] font-bold">
                   Cognitive impairments
                 </div>
@@ -194,11 +198,14 @@ const RemedifyPage = () => {
               </div>
             </div>
           </div>
-          <div className="overview-title text-[64px] text-[#007972] font-bold">
+          <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold">
             User persona
           </div>
           <div className="overview-content text-[32px] text-black flex justify-center items-center gap-4">
-            <button onClick={handlePrev} className="text-[50px] text-[#00A39B]">
+            <button
+              onClick={handlePrev}
+              className="text-[50px] max-xl:text-[20px] text-[#00A39B]"
+            >
               ⬅
             </button>
             <Image
@@ -206,34 +213,44 @@ const RemedifyPage = () => {
               width={500}
               height={300}
               alt="User Persona"
+              className="max-xl:w-[300px]"
             />
-            <button onClick={handleNext} className="text-[50px] text-[#00A39B]">
+            <button
+              onClick={handleNext}
+              className="text-[50px] max-xl:text-[20px] text-[#00A39B]"
+            >
               ➡
             </button>
           </div>
         </div>
-        <div className="overview-title text-[64px] text-[#007972] font-bold">
+        <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold">
           Sitemap
         </div>
         <div className="overview-content text-[32px] text-black flex justify-center items-center gap-4">
           <Image src="/sitemap.png" width={800} height={600} alt="sitemap" />
         </div>
-        <div className="overview-title text-[64px] text-[#007972] font-bold">
+        <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold">
           User Flow Map
         </div>
         <div className="overview-content text-[32px] text-black flex justify-center items-center gap-4">
-          <Image src="/User Flow Map.png" width={1000} height={550} alt="User Flow Map" />
+          <Image
+            src="/User Flow Map.png"
+            width={1000}
+            height={550}
+            alt="User Flow Map"
+          />
         </div>
         <div className="flex gap-3">
-          <div className="overview-title text-[64px] text-[#007972] font-bold">
+          <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold">
             Lo-Fi/Hi-Fi Wireframe
           </div>
         </div>
-        <div className="flex gap-10">
+        <div className="flex max-xl:flex-col gap-10">
           <iframe
             style={{
               border: "1px solid rgba(0, 0, 0, 0.1)",
-              width: "800px",
+              width: "100%",
+              maxWidth: "800px",
               height: "600px",
               boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.3)",
             }}
@@ -244,7 +261,8 @@ const RemedifyPage = () => {
           <iframe
             style={{
               border: "1px solid rgba(0, 0, 0, 0.1)",
-              width: "800px",
+              width: "100%",
+              maxWidth: "800px",
               height: "600px",
               boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.3)",
             }}
@@ -254,10 +272,10 @@ const RemedifyPage = () => {
           ></iframe>
         </div>
         <div>
-          <div className="overview-title text-[64px] text-[#007972] mb-[40] font-bold">
+          <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] mb-[40] font-bold">
             STYLEGUIDE
           </div>
-          <div className="flex flex-col items-center gap-[100px]">
+          <div className="flex flex-col items-center gap-[100px] mt-[80px]">
             <Colours />
             <Fonts />
             <Logo />
@@ -267,12 +285,12 @@ const RemedifyPage = () => {
           MoodBoard
         </div>
         <Slideshow />
-        <div className="pt-10 flex w-full">
+        <div className="pt-10 flex max-xl:flex-col w-full">
           <div className="flex flex-col">
             <div className="text-[48px] font-bold text-[#007972] mb-10">
               Feature Highlight
             </div>
-            <div className="flex gap-[55px]">
+            <div className="flex max-xl:flex-col gap-[55px]">
               <Image
                 src="/fh-1.png"
                 width={223}
@@ -291,7 +309,7 @@ const RemedifyPage = () => {
             <div className="text-[48px] font-bold text-[#007972] text-right mb-10">
               AI-Powered Label Scanning
             </div>
-            <div className="flex gap-[30px] pt-10 pl-20">
+            <div className="flex max-xl:flex-col gap-[30px] pt-10 pl-20">
               <Image
                 src="/ai.png"
                 width={176}
@@ -314,24 +332,41 @@ const RemedifyPage = () => {
         <Code />
         <CodeChallenge />
         <div className="overview-title text-[64px] text-[#007972] font-bold justify-center flex">
-  Visual Story
-</div>
-<div className="flex justify-center">
-  <video width="800" controls>
-    <source src="/Remedify_Visual_Story_V9.mov" type="video/mp4" />
-  </video>
-</div>
-<div className="overview-title text-[64px] text-[#007972] font-bold justify-center flex mt-10">Business Cards</div>
+          Visual Story
+        </div>
+        <div className="flex justify-center">
+          <video width="800" controls>
+            <source src="/Remedify_Visual_Story_V9.mov" type="video/mp4" />
+          </video>
+        </div>
+        <div className="overview-title text-[64px] text-[#007972] font-bold justify-center flex mt-10">
+          Business Cards
+        </div>
         <div className="flex justify-center mt-10 ">
-          <Image src="/BusinessCards.png" width={700} height={400} alt="BusinessCards" />
+          <Image
+            src="/BusinessCards.png"
+            width={700}
+            height={400}
+            alt="BusinessCards"
+          />
         </div>
         <div>
-        <div className="flex justify-center mt-10 gap-20 ">
-          <Image src="/BusinessCards2.png" width={500} height={20} alt="BusinessCards2" />
-          <Image src="/BusinessCards3.png" width={500} height={20} alt="BusinessCards3" />
+          <div className="flex max-xl:flex-col justify-center mt-10 gap-20 ">
+            <Image
+              src="/BusinessCards2.png"
+              width={500}
+              height={20}
+              alt="BusinessCards2"
+            />
+            <Image
+              src="/BusinessCards3.png"
+              width={500}
+              height={20}
+              alt="BusinessCards3"
+            />
           </div>
-          </div>
-        <FinalDesign/>
+        </div>
+        <FinalDesign />
         <div className="overview-title text-[64px] text-[#007972] font-bold justify-center flex">
           Blog
         </div>
