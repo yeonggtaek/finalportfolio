@@ -4,17 +4,17 @@ import React from "react";
 export const MedLib = () => {
   return (
     <div>
-      <div className="overview-title text-[64px] text-[#007972] font-bold justify-center flex mt-10 mb-20">
+      <div className="overview-title text-[64px] max-xl:text-[40px] text-[#007972] font-bold justify-center flex mt-10 mb-20">
         Medication Library
       </div>
-      <div className="flex max-xl:flex-col gap-[130px]">
+      <div className="flex max-xl:flex-col gap-[130px] max-xl:gap-[60px]">
         <Image
           src="/medlib.png"
           width={500}
           height={1010}
           alt="Medication Library"
         />
-        <div className="text-[24px] leading-[80px]">
+        <div className="text-[24px] leading-[80px] max-xl:text-base">
           <span className="font-bold">Medication Library</span> allows users to
           review all their medications in one clear, organized space, making it
           easier to track prescriptions without confusion. With navigation and

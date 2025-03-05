@@ -10,7 +10,7 @@ const images = [
 
 export default function ImageSlider() {
   return (
-    <div className="overflow-hidden relative p-4">
+    <div className="overflow-hidden relative p-4 ">
       <motion.div
         className="flex space-x-4"
         animate={{ x: ["100%", "-100%"] }}

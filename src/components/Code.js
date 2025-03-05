@@ -4,10 +4,10 @@ import React from "react";
 export const Code = () => {
   return (
     <div>
-      <div className="overview-title text-[64px] text-[#007972] font-bold justify-center flex mt-10 mb-20">
+      <div className="overview-title text-[64px] max-xl:text-[40px] text-[#007972] font-bold justify-center flex mt-10 mb-20">
         Medication Library
       </div>
-      <div className="flex max-xl:flex-col justify-space w-full gap-[130px]">
+      <div className="flex max-xl:flex-col justify-space w-full gap-[130px] max-xl:gap-[60]">
         <Image
           className="flex-1 flex w-[600px] !h-[1463px]"
           src="/code.png"
@@ -16,22 +16,22 @@ export const Code = () => {
           alt="code"
         />
         <div className="flex flex-col flex-1 text-[20px] gap-[10]">
-          <div className="text-[32px] font-bold">How I Coded It</div>
+          <div className="text-[32px] font-bold max-xl:text-[20px]">How It Coded </div>
           <a
             href="https://github.com/yeenathan/Asclepius/blob/main/app/pages/medLibrary.component.js"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[15px] font-bold hover:text-blue-500"
+            className="text-[16px] font-bold hover:text-blue-500"
           >
             Link to file
           </a>
-          <div className="text-[24px] font-bold">Core Components</div>
+          <div className="text-[24px] max-xl:text-base font-bold">Core Components</div>
           <ul>
             <li>
-              <span className="pl-4 font-bold">
-                1. ArchiveModal (Reusable Confirmation Modal)
+              <span className="pl-4 font-bold max-xl:text-base">
+                1. ArchiveModal
               </span>
-              <ul className="pl-14 list-disc">
+              <ul className="pl-14 list-disc max-xl:text-base">
                 <li>
                   A modal that asks users if they want to archive or delete a
                   medication.
@@ -50,10 +50,10 @@ export const Code = () => {
               </ul>
             </li>
             <li>
-              <span className="pl-4 font-bold">
-                2. MedButton (Medication List Item)
+              <span className="pl-4 font-bold max-xl:text-base">
+                2. MedButton 
               </span>
-              <ul className="pl-14 list-disc">
+              <ul className="pl-14 list-disc max-xl:text-base">
                 <li>
                   Displays medication name, icon, and a button to archive or
                   delete.
@@ -66,10 +66,10 @@ export const Code = () => {
               </ul>
             </li>
             <li>
-              <span className="pl-4 font-bold">
-                3. MedFolder (Medication List Screen)
+              <span className="pl-4 font-bold max-xl:text-base">
+                3. MedFolder 
               </span>
-              <ul className="pl-14 list-disc">
+              <ul className="pl-14 list-disc max-xl:text-base">
                 <li>Fetches and displays medications.</li>
                 <li>Uses AsyncStorage to persist medication data.</li>
                 <li>
@@ -79,20 +79,20 @@ export const Code = () => {
               </ul>
             </li>
             <li>
-              <span className="pl-4 font-bold">
-                4. InfoScreen (Medication Details)
+              <span className="pl-4 font-bold max-xl:text-base">
+                4. InfoScreen 
               </span>
-              <ul className="pl-14 list-disc">
+              <ul className="pl-14 list-disc max-xl:text-base">
                 <li>Shows detailed medication information.</li>
                 <li>Features a "View More" expandable description.</li>
                 <li>Allows editing medication details via EditInfoScreen.</li>
               </ul>
             </li>
             <li>
-              <span className="pl-4 font-bold">
+              <span className="pl-4 font-bold max-xl:text-base">
                 5. EditReminderScreen & EditInfoScreen
               </span>
-              <ul className="pl-14 list-disc">
+              <ul className="pl-14 list-disc max-xl:text-base">
                 <li>
                   Enable users to update dosage, reminders, and directions.{" "}
                 </li>
@@ -100,8 +100,8 @@ export const Code = () => {
               </ul>
             </li>
           </ul>
-          <div className="text-[32px] font-bold">Why I Coded It This Way</div>
-          <ul className="pl-14 list-disc">
+          <div className="text-[32px] font-bold max-xl:text-base">Why Coded It this way</div>
+          <ul className="pl-14 list-disc max-xl:text-base">
             <li>
               Reusability → ArchiveModal is a reusable component that handles
               both archive & delete actions.

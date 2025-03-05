@@ -1,23 +1,12 @@
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export const Animation = () => {
-  const [rotationAxis, setRotationAxis] = useState({ x: 1, y: 1, z: 1 });
-
-  useEffect(() => {
-    const randomAxis = {
-      x: Math.random() > 0.5 ? 1 : -1,
-      y: Math.random() > 0.5 ? 1 : -1,
-      z: Math.random() > 0.5 ? 1 : -1,
-    };
-    setRotationAxis(randomAxis);
-  }, []);
-
   return (
-    <div>
+    <div className="mt-10">
       <div
         style={{
-          animation: `rotate3D 5s infinite linear`,
+          animation: `floating 3s infinite ease-in-out`,
           transformOrigin: "center",
         }}
       >
@@ -34,14 +23,15 @@ export const Animation = () => {
 
       <style>
         {`
-          @keyframes rotate3D {
+          @keyframes floating {
             0% {
-              transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+              transform: translateY(0px);
+            }
+            50% {
+              transform: translateY(-20px);
             }
             100% {
-              transform: rotateX(${rotationAxis.x * 360}deg)
-                         rotateY(${rotationAxis.y * 360}deg)
-                         rotateZ(${rotationAxis.z * 360}deg);
+              transform: translateY(0px);
             }
           }
         `}

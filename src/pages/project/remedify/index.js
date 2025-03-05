@@ -33,7 +33,7 @@ const RemedifyPage = () => {
       <GoToTop />
       <div className="flex pt-20 flex-col gap-10 text-black">
         <div className="flex justify-between title">
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-10 max-xl:gap-5">
             <Image
               src="/remedify logo.png"
               width={430}
@@ -41,7 +41,7 @@ const RemedifyPage = () => {
               alt="remedify"
               className="max-xl:w-[120px]"
             />
-            <ul className="text-[35px] max-xl:text-base font-bold text-[#00A39B]">
+            <ul className="text-[34px] max-xl:text-base font-bold text-[#00A39B]">
               <li>Sep - Dec 2024</li>
               <li>ROLE: Developer</li>
               <li>
@@ -58,12 +58,12 @@ const RemedifyPage = () => {
                 width={300}
                 height={300}
                 alt="earth"
-                className="max-xl:w-[120px]"
+                className="max-xl:w-[140px]"
               />
             </div>
           </ul>
         </div>
-        <div className="logos flex items-center gap-12">
+        <div className="logos flex items-center gap-12 max-xl:gap-6">
           <div className="text-[40px] max-xl:text-[15px] font-bold text-[#00A39B]">
             Link to:
           </div>
@@ -79,7 +79,7 @@ const RemedifyPage = () => {
           </LinkButton>
         </div>
         <div className="overview flex flex-col gap-10">
-          <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold">
+          <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold max-xl: flex max-xl:justify-center">
             Project Overview
           </div>
           <div className="overview-content text-[32px] max-xl:text-base text-black">
@@ -93,8 +93,8 @@ const RemedifyPage = () => {
           </div>
         </div>
         <div className="overview flex flex-col gap-10">
-          <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold">
-            Challenge
+          <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold max-xl: flex max-xl:justify-center">
+            Challenges
           </div>
           <div className="overview-content text-[32px]  max-xl:text-base text-black">
             <span className="font-bold">
@@ -129,8 +129,8 @@ const RemedifyPage = () => {
           </div>
         </div>
         <div className="overview flex flex-col gap-10">
-          <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold">
-            Solution
+          <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold max-xl: flex max-xl:justify-center">
+            Solutions
           </div>
           <div className="overview-content text-[32px] max-xl:text-base text-black">
             <span className="font-bold">Smart Medication Tracking:</span>{" "}
@@ -173,7 +173,7 @@ const RemedifyPage = () => {
                 <div className="text-center text-[24px] text-[#00A39B] font-bold">
                   Polypharmacy
                 </div>
-                <div className="text-[20px] font-semibold">
+                <div className="text-[20px] font-semibold max-xl: flex max-xl:justify-center">
                   Remedify helps users
                   <br /> manage multiple
                   <br /> medications with clear
@@ -190,7 +190,7 @@ const RemedifyPage = () => {
                 <div className="text-center text-[24px] text-[#00A39B] font-bold">
                   Cognitive impairments
                 </div>
-                <div className="w-[288px] text-[20px] font-semibold">
+                <div className="w-[288px] text-[20px] font-semibold max-xl: flex max-xl:justify-center">
                   Remedify’s smart reminders assist users with cognitive
                   challenges, fostering confidence and routine in medication
                   management.
@@ -198,7 +198,7 @@ const RemedifyPage = () => {
               </div>
             </div>
           </div>
-          <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold">
+          <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold max-xl: flex max-xl:justify-center">
             User persona
           </div>
           <div className="overview-content text-[32px] text-black flex justify-center items-center gap-4">
@@ -223,13 +223,13 @@ const RemedifyPage = () => {
             </button>
           </div>
         </div>
-        <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold">
+        <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold max-xl: flex max-xl:justify-center">
           Sitemap
         </div>
         <div className="overview-content text-[32px] text-black flex justify-center items-center gap-4">
           <Image src="/sitemap.png" width={800} height={600} alt="sitemap" />
         </div>
-        <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold">
+        <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold max-xl: flex max-xl:justify-center">
           User Flow Map
         </div>
         <div className="overview-content text-[32px] text-black flex justify-center items-center gap-4">
@@ -241,7 +241,7 @@ const RemedifyPage = () => {
           />
         </div>
         <div className="flex gap-3">
-          <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold">
+          <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold ">
             Lo-Fi/Hi-Fi Wireframe
           </div>
         </div>
@@ -272,25 +272,25 @@ const RemedifyPage = () => {
           ></iframe>
         </div>
         <div>
-          <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] mb-[40] font-bold">
+          <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] mb-[40] font-bold max-xl: flex max-xl:justify-center">
             STYLEGUIDE
           </div>
-          <div className="flex flex-col items-center gap-[100px] mt-[80px]">
+          <div className="flex flex-col items-center gap-[100px] mt-[80px] max-xl:mt-[40px]">
             <Colours />
             <Fonts />
             <Logo />
           </div>
         </div>
-        <div className="overview-title text-[64px] text-[#007972] font-bold justify-center flex">
+        <div className="overview-title text-[64px] max-xl:text-[40px] text-[#007972] font-bold justify-center flex">
           MoodBoard
         </div>
         <Slideshow />
         <div className="pt-10 flex max-xl:flex-col w-full">
           <div className="flex flex-col">
-            <div className="text-[48px] font-bold text-[#007972] mb-10">
+            <div className="text-[48px] max-xl:text-[24px] font-bold text-[#007972] mb-10">
               Feature Highlight
             </div>
-            <div className="flex max-xl:flex-col gap-[55px]">
+            <div className="flex max-xl:flex-col max-xl:justify-center gap-[55px] ">
               <Image
                 src="/fh-1.png"
                 width={223}
@@ -306,7 +306,7 @@ const RemedifyPage = () => {
             </div>
           </div>
           <div className="flex flex-col flex-1">
-            <div className="text-[48px] font-bold text-[#007972] text-right mb-10">
+            <div className="text-[48px] font-bold text-[#007972] text-right mb-10 max-xl:text-[24px] max-xl:mt-[40px]">
               AI-Powered Label Scanning
             </div>
             <div className="flex max-xl:flex-col gap-[30px] pt-10 pl-20">
@@ -316,7 +316,7 @@ const RemedifyPage = () => {
                 height={320}
                 alt="AI-Powered Label Scanning"
               />
-              <div className="text-[24px] font-semibold py-10 pr-10">
+              <div className="text-[24px] max-xl: text-base font-semibold py-10 pr-10">
                 Easily scan your medication labels to set up reminders
                 automatically, minimizing the steps you need to remember and
                 simplifying the process.
@@ -324,14 +324,14 @@ const RemedifyPage = () => {
             </div>
           </div>
         </div>
-        <ul className="text-[24px] font-semibold">
+        <ul className="text-[24px] max-xl: text-base font-semibold ">
           <li>Organized medication schedules.</li>
           <li>Clear reminders to ensure adherence.</li>
         </ul>
         <MedLib />
         <Code />
         <CodeChallenge />
-        <div className="overview-title text-[64px] text-[#007972] font-bold justify-center flex">
+        <div className="overview-title text-[64px] max-xl:text-[40px] text-[#007972] font-bold justify-center flex">
           Visual Story
         </div>
         <div className="flex justify-center">
@@ -339,7 +339,7 @@ const RemedifyPage = () => {
             <source src="/Remedify_Visual_Story_V9.mov" type="video/mp4" />
           </video>
         </div>
-        <div className="overview-title text-[64px] text-[#007972] font-bold justify-center flex mt-10">
+        <div className="overview-title text-[64px] max-xl:text-[40px] text-[#007972] font-bold justify-center flex mt-10">
           Business Cards
         </div>
         <div className="flex justify-center mt-10 ">
@@ -367,7 +367,7 @@ const RemedifyPage = () => {
           </div>
         </div>
         <FinalDesign />
-        <div className="overview-title text-[64px] text-[#007972] font-bold justify-center flex">
+        <div className="overview-title text-[64px] max-xl:text-[40px] text-[#007972] font-bold justify-center flex">
           Blog
         </div>
         <Blog />

@@ -13,7 +13,7 @@ export const Projects = () => {
       <div>
         <div className="text-[46px] font-semibold ">Projects</div>
       </div>
-      <div className="flex flex-col gap-10">
+      <div className="flex max-xl:flex-col gap-10">
         <div>
         <div className="w-full flex gap-[100px] pt-[10px] max-xl:pt-[30px] max-xl:gap-[100px]">
           <Project

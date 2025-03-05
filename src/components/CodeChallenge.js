@@ -4,24 +4,24 @@ import React from "react";
 export const CodeChallenge = () => {
   return (
     <div>
-      <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold justify-start flex mt-10 mb-20">
+      <div className="overview-title text-[64px] max-xl:text-[20px] text-[#007972] font-bold justify-start flex mt-10 mb-20 max-xl:mb-10">
         Code Challenge/Solution
       </div>
       <div className="flex flex-col">
-        <div className="text-[36px] font-bold mb-10">
+        <div className="text-[36px] font-bold mb-10 max-xl:mb-5 max-xl:text-[20px]">
           Handling Both Archive & Delete in One Modal
         </div>
-        <div className="flex flex-col gap-10 text-[24px] font-semibold">
+        <div className="flex flex-col gap-10 max-xl: gap-5 text-[24px] font-semibold">
           <div>
-            <span className="text-[32px] font-bold">🚨 Challenge:</span>
-            <ul>
+            <span className="text-[32px] font-bold max-xl:text-[20px]">Challenge:</span>
+            <ul className="max-xl:text-base">
               The user needs to confirm two different actions (archiving &
               deleting) but creating separate modals would be inefficient.
             </ul>
           </div>
           <div>
-            <span className="text-[32px] font-bold">✅ Solution:</span>
-            <ul className="list-disc">
+            <span className="text-[32px] font-bold max-xl:text-[20px]">Solution:</span>
+            <ul className="list-disc max-xl:text-base">
               <li>
                 Used dynamic props (actionWord, description) to make
                 ArchiveModal flexible.
@@ -35,19 +35,19 @@ export const CodeChallenge = () => {
               </li>
             </ul>
           </div>
-          <div className="text-[36px] font-bold">
+          <div className="text-[36px] font-bold max-xl:text-[20px]">
             Persisting Medications Using AsyncStorage
           </div>
           <div>
-            <span className="text-[32px] font-bold">🚨 Challenge:</span>
-            <ul>
+            <span className="text-[32px] font-bold max-xl:text-base">Challenge:</span>
+            <ul className="list-disc max-xl:text-base">
               The app should remember medications even after closing and
               reopening.
             </ul>
           </div>
           <div>
-            <span className="text-[32px] font-bold">✅ Solution:</span>
-            <ul className="list-disc">
+            <span className="text-[32px] font-bold max-xl:text-base ">Solution:</span>
+            <ul className="list-disc max-xl:text-base">
               <li>Used AsyncStorage to save medication data persistently.</li>
               <li>
                 When the app loads, it retrieves stored medication data in
@@ -55,22 +55,22 @@ export const CodeChallenge = () => {
               </li>
             </ul>
           </div>
-          <div className="text-[36px] font-bold">
+          <div className="text-[36px] font-bold max-xl:text-[20px]">
             Managing Multiple Modals Efficiently
           </div>
           <div>
-            <span className="text-[32px] font-bold">🚨 Challenge:</span>
-            <ul>
+            <span className="text-[32px] font-bold max-xl:text-[20px  ]">Challenge:</span>
+            <ul className="max-xl:text-base">
               A bottom sheet (showArchiveBottomModal) for selecting
               archive/delete.
             </ul>
-            <ul>
+            <ul className="max-xl:text-base">
               A confirmation modal (showArchiveModal) for user confirmation.
             </ul>
           </div>
           <div>
-            <span className="text-[32px] font-bold">✅ Solution:</span>
-            <ul className="list-disc">
+            <span className="text-[32px] font-bold max-xl:text-[20px]">Solution:</span>
+            <ul className="list-disc max-xl:text-base ">
               <li>Used useState hooks for each modal</li>
               <li>js</li>
               <li>

@@ -5,11 +5,11 @@ export const FinalDesign = () => {
   return (
     <div className="mt-[20]">
       <div className="flex flex-col items-center gap-[40px]">
-        <div className="overview-title text-[64px] text-[#007972] font-bold">
+        <div className="overview-title text-[64px] max-xl:text-[40px] text-[#007972] font-bold">
           FinalDesign
         </div>
         <div className="flex flex-col">
-          <div className="flex max-xl:flex-col gap-20 justify-center mt-10">
+          <div className="flex max-xl:flex-col gap-20 justify-center mt-10 max-xl:mt-6">
             <Image src="/final1.png" width={500} height={900} alt="final" />
             <Image src="/final2.png" width={500} height={900} alt="final2" />
           </div>
