@@ -10,9 +10,9 @@ export const Projects = () => {
       className="flex flex-col items-center justify-center w-full pt-[100px] max-xl:pt-[50px]"
     >
       <div>
-        <div className="text-[46px] font-semibold">Projects</div>
+        <div className="text-[46px] font-semibold mb-10">Projects</div>
       </div>
-      <div className="grid grid-cols-2 gap-10 max-xl:grid-cols-1">
+      <div className="grid grid-cols-2 gap-20 max-xl:grid-cols-1">
         <Project
           alt="save the earth"
           src="/planet1.png"
