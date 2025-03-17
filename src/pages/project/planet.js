@@ -76,11 +76,11 @@ const PlanetPage = () => {
           </div>
           <LinkButton href="https://github.com/yeonggtaek/planet-saver">
             <Image
-              src="/github.png"
-              width={80}
-              height={80}
+              src="/git2.png"
+              width={120}
+              height={120}
               alt="github"
-              className=" max-xl:w-[40px] max-xl:h-[40px]"
+              className=" max-xl:w-[54px] max-xl:h-[35px]"
             />
           </LinkButton>
           <LinkButton href="https://planet-saver.vercel.app/">
