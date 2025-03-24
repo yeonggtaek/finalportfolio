@@ -17,14 +17,16 @@ export const Code = () => {
         />
         <div className="flex flex-col flex-1 text-[20px] gap-[10]">
           <div className="text-[32px] font-bold max-xl:text-[20px]">How It Coded </div>
+          <div className="w-[140px]">
           <a
             href="https://github.com/yeenathan/Asclepius/blob/main/app/pages/medLibrary.component.js"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[16px] font-bold hover:text-blue-500"
+            className="inline-block px-4 py-2 bg-blue-600 text-white text-[16px] font-bold rounded hover:bg-blue-700 transition-colors duration-200"
           >
             Link to file
           </a>
+          </div>
           <div className="text-[24px] max-xl:text-base font-bold">Core Components</div>
           <ul>
             <li>

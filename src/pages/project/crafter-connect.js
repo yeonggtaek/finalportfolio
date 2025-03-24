@@ -79,21 +79,24 @@ const CraftersConnectPage = () => {
           <div className="text-[40px] max-xl:text-[15px] font-bold">
             Link to:
           </div>
-          <LinkButton href="https://craftersconnect.vercel.app/">
-            <Image
-              src="/vercel-text.svg"
-              width={80}
-              height={80}
-              alt="vercel"
-              className="max-xl:w-[40px] max-xl:h-[40px]"
-            />
-          </LinkButton>
           <LinkButton href="https://www.figma.com/proto/7NULAtnjrj1iwbcx0juovm/Crafter-Connect-IDSP?node-id=1-3088&t=H73n4CwWE8gxTK0F-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A3088">
             <Image
               src="/figma.png"
               width={90}
               height={90}
               alt="figma"
+              className="max-xl:w-[40px] max-xl:h-[40px]"
+            />
+          </LinkButton>
+          <div className="text-[40px] max-xl:text-[15px] font-bold">
+            Try this app:
+          </div>
+          <LinkButton href="https://craftersconnect.vercel.app/">
+            <Image
+              src="/vercel-text.svg"
+              width={80}
+              height={80}
+              alt="vercel"
               className="max-xl:w-[40px] max-xl:h-[40px]"
             />
           </LinkButton>

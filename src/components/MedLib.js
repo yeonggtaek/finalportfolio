@@ -14,7 +14,7 @@ export const MedLib = () => {
           height={1010}
           alt="Medication Library"
         />
-        <div className="text-[24px] leading-[80px] max-xl:text-base">
+        <div className="text-[24px] leading-[30px] max-xl:text-base">
           <span className="font-bold">Medication Library</span> allows users to
           review all their medications in one clear, organized space, making it
           easier to track prescriptions without confusion. With navigation and

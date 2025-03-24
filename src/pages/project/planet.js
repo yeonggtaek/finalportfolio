@@ -83,6 +83,9 @@ const PlanetPage = () => {
               className=" max-xl:w-[54px] max-xl:h-[35px]"
             />
           </LinkButton>
+          <div className="text-[40px] max-xl:text-[15px] font-bold text-[#0A4E9F]">
+            Try this app:
+          </div>
           <LinkButton href="https://planet-saver.vercel.app/">
             <Image
               src="/vercel-text.svg"
