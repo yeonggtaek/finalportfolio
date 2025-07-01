@@ -41,6 +41,20 @@ export const Projects = () => {
           title="“APT” Song Poster"
           desc="“APT” is a Photoshop design poster"
         />
+                <Project
+          alt="BC Ecosystem"
+          src="/BC Ecosystems.png"
+          href="project/ecosystem"
+          title="“BC ecosystem"
+          desc="“Description about BC ecosystem"
+        />
+                <Project
+          alt="Seuolsocietyvancouver"
+          src="/Seuolsocietyvancouver.png"
+          href="project/seuolsocietyvancouver"
+          title="Seuolsocietyvancouver"
+          desc="contents team in Seuolsocietyvancouver"
+        />
       </div>
     </section>
   );

@@ -7,9 +7,9 @@ export const Intro = () => {
       sequence={[
         "I like to Design",
         1000,
-        "I like to CSS",
-        1000,
         "I like to Build",
+        1000,
+        "I like to Marketing",
         1000,
       ]}
       wrapper="span"

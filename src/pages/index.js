@@ -15,7 +15,6 @@ export default function Home() {
           <div className="text-[30px] max-xl:text-base font-semibold">
             Hello! I’m Yeongtaek
             <br />
-            I’m a Web Designer & Developer!
             <br />
             <Intro />
           </div>
