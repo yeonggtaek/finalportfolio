@@ -78,20 +78,15 @@ export const About = () => {
         </section>
         <div className="flex">
           <div className="mr-[54px] text-[32px] max-xl:text-base font-semibold ">
-            Hello! I’m Yeongtaek. I’m a designer and developer!
-            <br /> I specialize in Digital Design and Development.
-            <br /> I am passionate about UX/UI design and front-end
-            <br /> development, with a strong focus on creating user-
-            <br />
-            centered digital experiences.
+            Hello! I’m Yeongtaek!
+            <br /> Specializing in Digital Design and Development, I’m passionate about UX/UI
+design and front-end development, with a strong focus on crafting user-cen-
+tered digital experiences.
+            <br /> Beyond design and code, I also have a growing
+interest in marketing, including the work marketers do, enjoy video shooting
+and editing, and love keeping up with the latest trends to create fresh, engag-
+ing content across platforms.
           </div>
-          <Image
-            className="max-xl:hidden"
-            src="/me.png"
-            width={360}
-            height={260}
-            alt="me"
-          />
         </div>
       </div>
       <div className="py-6 w-full mb-20 max-xl:mb-5">
